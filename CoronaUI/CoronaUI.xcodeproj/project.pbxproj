@@ -16,6 +16,9 @@
 		045971BA243CF65C007F3E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045971B8243CF65C007F3E29 /* LaunchScreen.storyboard */; };
 		045971C5243CF65C007F3E29 /* CoronaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045971C4243CF65C007F3E29 /* CoronaUITests.swift */; };
 		045971D0243CF65C007F3E29 /* CoronaUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045971CF243CF65C007F3E29 /* CoronaUIUITests.swift */; };
+		04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */; };
+		04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */; };
+		04BF564C243D163A0083867C /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF564B243D16390083867C /* HomeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		045971CB243CF65C007F3E29 /* CoronaUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045971CF243CF65C007F3E29 /* CoronaUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaUIUITests.swift; sourceTree = "<group>"; };
 		045971D1243CF65C007F3E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinisterioDaSaudeTwitter.swift; sourceTree = "<group>"; };
+		04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortoAlegreStatus.swift; sourceTree = "<group>"; };
+		04BF564B243D16390083867C /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		045971A9243CF659007F3E29 /* CoronaUI */ = {
 			isa = PBXGroup;
 			children = (
+				04BF5645243D10C90083867C /* FakeNetwork */,
 				045971AA243CF659007F3E29 /* AppDelegate.swift */,
 				045971AC243CF659007F3E29 /* SceneDelegate.swift */,
 				045971B1243CF659007F3E29 /* ContentView.swift */,
@@ -137,6 +144,24 @@
 				045971D1243CF65C007F3E29 /* Info.plist */,
 			);
 			path = CoronaUIUITests;
+			sourceTree = "<group>";
+		};
+		04BF5645243D10C90083867C /* FakeNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				04BF5648243D138B0083867C /* DashBoard */,
+			);
+			path = FakeNetwork;
+			sourceTree = "<group>";
+		};
+		04BF5648243D138B0083867C /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */,
+				04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */,
+				04BF564B243D16390083867C /* HomeTests.swift */,
+			);
+			path = DashBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
+				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
+				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
