@@ -16,6 +16,10 @@
 		045971BA243CF65C007F3E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045971B8243CF65C007F3E29 /* LaunchScreen.storyboard */; };
 		045971C5243CF65C007F3E29 /* CoronaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045971C4243CF65C007F3E29 /* CoronaUITests.swift */; };
 		045971D0243CF65C007F3E29 /* CoronaUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045971CF243CF65C007F3E29 /* CoronaUIUITests.swift */; };
+		0477C533243E652D000B05C9 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C532243E652D000B05C9 /* Messages.swift */; };
+		0477C537243E6604000B05C9 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C536243E6604000B05C9 /* Attendance.swift */; };
+		0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C538243E6668000B05C9 /* PatientNameGeneration.swift */; };
+		0477C53B243E6697000B05C9 /* DistrictGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C53A243E6697000B05C9 /* DistrictGeneration.swift */; };
 		04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */; };
 		04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */; };
 		04BF564C243D163A0083867C /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF564B243D16390083867C /* HomeTests.swift */; };
@@ -55,6 +59,10 @@
 		045971CB243CF65C007F3E29 /* CoronaUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045971CF243CF65C007F3E29 /* CoronaUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaUIUITests.swift; sourceTree = "<group>"; };
 		045971D1243CF65C007F3E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0477C532243E652D000B05C9 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		0477C536243E6604000B05C9 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		0477C538243E6668000B05C9 /* PatientNameGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNameGeneration.swift; sourceTree = "<group>"; };
+		0477C53A243E6697000B05C9 /* DistrictGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictGeneration.swift; sourceTree = "<group>"; };
 		04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinisterioDaSaudeTwitter.swift; sourceTree = "<group>"; };
 		04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortoAlegreStatus.swift; sourceTree = "<group>"; };
 		04BF564B243D16390083867C /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
@@ -171,6 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				04E5F427243E5BA700FD32B1 /* Patients.swift */,
+				0477C532243E652D000B05C9 /* Messages.swift */,
+				0477C536243E6604000B05C9 /* Attendance.swift */,
+				0477C538243E6668000B05C9 /* PatientNameGeneration.swift */,
+				0477C53A243E6697000B05C9 /* DistrictGeneration.swift */,
 			);
 			path = ConfirmedPatients;
 			sourceTree = "<group>";
@@ -307,9 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
+				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
+				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
+				0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
+				0477C53B243E6697000B05C9 /* DistrictGeneration.swift in Sources */,
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
