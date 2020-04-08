@@ -8,14 +8,16 @@
 
 import Foundation
 
+//enum
+
+//func isLeapYear(year: Int) -> Bool {
+//    return (year % 4 == 0 && !(year % 100 == 0)) || year % 400 == 0
+//}
+
 struct HomeTests {
     var when: Date
     var patientName: String
     var healthResponsible: String
-}
-
-fileprivate func date(days after: Int) -> Date {
-    return Date().addingTimeInterval(TimeInterval(after * 86400))
 }
 
 fileprivate func date(hours after: Int) -> Date {
@@ -23,5 +25,7 @@ fileprivate func date(hours after: Int) -> Date {
 }
 
 let todaysCalendar: [HomeTests] = [
-    HomeTests(when: date(hours: 2), patientName: "Generic Name", healthResponsible: "Name Generic")
+    HomeTests(when: date(hours: 2), patientName: "Generic Name", healthResponsible: "Name Generic"),
+    HomeTests(when: date(hours: 3), patientName: "Generic Name", healthResponsible: "Name Generic"),
+    HomeTests(when: date(hours: 4), patientName: "Generic Name", healthResponsible: "Name Generic")
 ]

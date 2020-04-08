@@ -19,6 +19,7 @@
 		04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */; };
 		04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */; };
 		04BF564C243D163A0083867C /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF564B243D16390083867C /* HomeTests.swift */; };
+		04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5F427243E5BA700FD32B1 /* Patients.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		04BF5646243D11670083867C /* MinisterioDaSaudeTwitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinisterioDaSaudeTwitter.swift; sourceTree = "<group>"; };
 		04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortoAlegreStatus.swift; sourceTree = "<group>"; };
 		04BF564B243D16390083867C /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
+		04E5F427243E5BA700FD32B1 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				04BF5648243D138B0083867C /* DashBoard */,
+				04E5F426243E5B5900FD32B1 /* ConfirmedPatients */,
 			);
 			path = FakeNetwork;
 			sourceTree = "<group>";
@@ -162,6 +165,14 @@
 				04BF564B243D16390083867C /* HomeTests.swift */,
 			);
 			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		04E5F426243E5B5900FD32B1 /* ConfirmedPatients */ = {
+			isa = PBXGroup;
+			children = (
+				04E5F427243E5BA700FD32B1 /* Patients.swift */,
+			);
+			path = ConfirmedPatients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
+				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
