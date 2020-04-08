@@ -43,7 +43,7 @@ func getPatientIndex() -> Int {
 
 func generatePatients(listSize: Int) -> [Patient] {
     var patients: [Patient] = []
-    for i in 0 ..< listSize {
+    for _ in 0 ..< listSize {
         patients.append(Patient(id: getPatientIndex(), name: getRandomName(), age: Int.random(in: 0...100), district: getDistrict(), telephone: Telephone(ddd: 51, number: 9900_0000 + Int.random(in: 0...10_000)), firstSintoms: date(days: -Int.random(in: 1...100)), confirmed: Bool.random()))
     }
     return patients
