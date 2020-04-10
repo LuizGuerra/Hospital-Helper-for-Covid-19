@@ -118,12 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				04BF5645243D10C90083867C /* FakeNetwork */,
-				045971AA243CF659007F3E29 /* AppDelegate.swift */,
-				045971AC243CF659007F3E29 /* SceneDelegate.swift */,
+				899D81D9243FEB0B002603E7 /* Support */,
 				045971B1243CF659007F3E29 /* ContentView.swift */,
 				045971B3243CF65C007F3E29 /* Assets.xcassets */,
 				045971B8243CF65C007F3E29 /* LaunchScreen.storyboard */,
-				045971BB243CF65C007F3E29 /* Info.plist */,
 				045971AE243CF659007F3E29 /* CoronaUI.xcdatamodeld */,
 				045971B5243CF65C007F3E29 /* Preview Content */,
 			);
@@ -185,6 +183,16 @@
 				0477C53A243E6697000B05C9 /* DistrictGeneration.swift */,
 			);
 			path = ConfirmedPatients;
+			sourceTree = "<group>";
+		};
+		899D81D9243FEB0B002603E7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				045971AA243CF659007F3E29 /* AppDelegate.swift */,
+				045971AC243CF659007F3E29 /* SceneDelegate.swift */,
+				045971BB243CF65C007F3E29 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,7 +506,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CoronaUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BB2SW97R4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CoronaUI/Info.plist;
+				INFOPLIST_FILE = CoronaUI/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +526,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CoronaUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BB2SW97R4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CoronaUI/Info.plist;
+				INFOPLIST_FILE = CoronaUI/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
