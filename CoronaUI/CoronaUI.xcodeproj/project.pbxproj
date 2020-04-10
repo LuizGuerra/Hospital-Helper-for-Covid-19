@@ -24,6 +24,10 @@
 		04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */; };
 		04BF564C243D163A0083867C /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF564B243D16390083867C /* HomeTests.swift */; };
 		04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5F427243E5BA700FD32B1 /* Patients.swift */; };
+		8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EA24402DBF0056E1AE /* Agenda.swift */; };
+		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
+		8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8424402912003E18C6 /* Dashboard.swift */; };
+		8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8624402D4B003E18C6 /* Pacientes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortoAlegreStatus.swift; sourceTree = "<group>"; };
 		04BF564B243D16390083867C /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		04E5F427243E5BA700FD32B1 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
+		8A2EC8EA24402DBF0056E1AE /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
+		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
+		8AD9BE8424402912003E18C6 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		8AD9BE8624402D4B003E18C6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +125,9 @@
 		045971A9243CF659007F3E29 /* CoronaUI */ = {
 			isa = PBXGroup;
 			children = (
+				8AD9BE82244028E7003E18C6 /* Views */,
 				04BF5645243D10C90083867C /* FakeNetwork */,
 				899D81D9243FEB0B002603E7 /* Support */,
-				045971B1243CF659007F3E29 /* ContentView.swift */,
 				045971B3243CF65C007F3E29 /* Assets.xcassets */,
 				045971B8243CF65C007F3E29 /* LaunchScreen.storyboard */,
 				045971AE243CF659007F3E29 /* CoronaUI.xcdatamodeld */,
@@ -193,6 +201,26 @@
 				045971BB243CF65C007F3E29 /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		8AD9BE82244028E7003E18C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				045971B1243CF659007F3E29 /* ContentView.swift */,
+				8AD9BE8324402900003E18C6 /* Dashboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AD9BE8324402900003E18C6 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9BE8424402912003E18C6 /* Dashboard.swift */,
+				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
+				8A2EC8EA24402DBF0056E1AE /* Agenda.swift */,
+				8A2EC8EC24402DF00056E1AE /* Informacoes.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
+				8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */,
+				8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */,
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
+				8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
 				0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */,
@@ -337,6 +368,7 @@
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
+				8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CoronaUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BB2SW97R4;
+				DEVELOPMENT_TEAM = ZJDDP65ZQ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoronaUI/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,7 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CoronaUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BB2SW97R4;
+				DEVELOPMENT_TEAM = ZJDDP65ZQ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoronaUI/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
