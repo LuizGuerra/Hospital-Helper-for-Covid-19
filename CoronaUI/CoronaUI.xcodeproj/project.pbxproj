@@ -24,6 +24,8 @@
 		04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */; };
 		04BF564C243D163A0083867C /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF564B243D16390083867C /* HomeTests.swift */; };
 		04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5F427243E5BA700FD32B1 /* Patients.swift */; };
+		04E7B4DB2444DD8D00200569 /* PacientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DA2444DD8D00200569 /* PacientCell.swift */; };
+		04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DD2444E60C00200569 /* ApplicationColors.swift */; };
 		8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EA24402DBF0056E1AE /* Agenda.swift */; };
 		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
 		8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8424402912003E18C6 /* Dashboard.swift */; };
@@ -74,6 +76,8 @@
 		04BF5649243D13AA0083867C /* PortoAlegreStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortoAlegreStatus.swift; sourceTree = "<group>"; };
 		04BF564B243D16390083867C /* HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
 		04E5F427243E5BA700FD32B1 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
+		04E7B4DA2444DD8D00200569 /* PacientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacientCell.swift; sourceTree = "<group>"; };
+		04E7B4DD2444E60C00200569 /* ApplicationColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationColors.swift; sourceTree = "<group>"; };
 		8A2EC8EA24402DBF0056E1AE /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
 		8AD9BE8424402912003E18C6 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		045971A9243CF659007F3E29 /* CoronaUI */ = {
 			isa = PBXGroup;
 			children = (
+				04E7B4DC2444E5FF00200569 /* Resources */,
 				8AD9BE82244028E7003E18C6 /* Views */,
 				04BF5645243D10C90083867C /* FakeNetwork */,
 				899D81D9243FEB0B002603E7 /* Support */,
@@ -199,6 +204,22 @@
 			path = ConfirmedPatients;
 			sourceTree = "<group>";
 		};
+		04E7B4D92444DD6200200569 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				04E7B4DA2444DD8D00200569 /* PacientCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		04E7B4DC2444E5FF00200569 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04E7B4DD2444E60C00200569 /* ApplicationColors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		899D81D9243FEB0B002603E7 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
+				04E7B4D92444DD6200200569 /* Subviews */,
 			);
 			path = Pacientes;
 			sourceTree = "<group>";
@@ -395,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */,
 				8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */,
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
 				8AE30D262444D5B700E27253 /* TopBar.swift in Sources */,
@@ -412,6 +435,7 @@
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
 				8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */,
+				04E7B4DB2444DD8D00200569 /* PacientCell.swift in Sources */,
 				8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
 			);
