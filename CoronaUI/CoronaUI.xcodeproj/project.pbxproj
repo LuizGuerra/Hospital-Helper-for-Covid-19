@@ -28,6 +28,8 @@
 		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
 		8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8424402912003E18C6 /* Dashboard.swift */; };
 		8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8624402D4B003E18C6 /* Pacientes.swift */; };
+		8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D202444D1D500E27253 /* SearchBar.swift */; };
+		8AE30D262444D5B700E27253 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D252444D5B700E27253 /* TopBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
 		8AD9BE8424402912003E18C6 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		8AD9BE8624402D4B003E18C6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
+		8AE30D202444D1D500E27253 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		8AE30D252444D5B700E27253 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,8 +210,13 @@
 		8AD9BE82244028E7003E18C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				045971B1243CF659007F3E29 /* ContentView.swift */,
 				8AD9BE8324402900003E18C6 /* Dashboard */,
+				8AE30D222444D3DA00E27253 /* Pacientes */,
+				8AE30D232444D3E500E27253 /* Agenda */,
+				8AE30D242444D3EC00E27253 /* Informacoes */,
+				045971B1243CF659007F3E29 /* ContentView.swift */,
+				8AE30D202444D1D500E27253 /* SearchBar.swift */,
+				8AE30D252444D5B700E27253 /* TopBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,11 +225,32 @@
 			isa = PBXGroup;
 			children = (
 				8AD9BE8424402912003E18C6 /* Dashboard.swift */,
-				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
-				8A2EC8EA24402DBF0056E1AE /* Agenda.swift */,
-				8A2EC8EC24402DF00056E1AE /* Informacoes.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		8AE30D222444D3DA00E27253 /* Pacientes */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
+			);
+			path = Pacientes;
+			sourceTree = "<group>";
+		};
+		8AE30D232444D3E500E27253 /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				8A2EC8EA24402DBF0056E1AE /* Agenda.swift */,
+			);
+			path = Agenda;
+			sourceTree = "<group>";
+		};
+		8AE30D242444D3EC00E27253 /* Informacoes */ = {
+			isa = PBXGroup;
+			children = (
+				8A2EC8EC24402DF00056E1AE /* Informacoes.swift */,
+			);
+			path = Informacoes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
+				8AE30D262444D5B700E27253 /* TopBar.swift in Sources */,
 				8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */,
 				8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */,
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
@@ -369,6 +400,7 @@
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
 				8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */,
+				8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,6 +61,7 @@ struct TabButton: View {
 
 struct ContentView: View {
     
+    @State var searchText : String = ""
     @State var showingDashboard = false
     
     @State var currentTab: Tab
@@ -68,7 +69,6 @@ struct ContentView: View {
         
         
         HStack {
-            
             VStack {
                 Image("logo")
                     .resizable()
@@ -92,7 +92,14 @@ struct ContentView: View {
                 .background(Color(red: 0.216, green: 0.231, blue: 0.325))
                 .padding(.trailing)
             
-             getView(for: currentTab).padding(16)
+             
+            
+            VStack {
+                SearchBarView(searchText: $searchText)
+                getView(for: currentTab).padding(16)
+            }
+            
+            
         }
         
         
@@ -112,7 +119,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(currentTab: .dashboard)
-        //.previewLayout(.fixed(width: 1366, height: 1024))
+        ContentView(searchText: "", currentTab: .dashboard)
+            //.previewLayout(.fixed(width: 1366, height: 1024))
     }
 }
