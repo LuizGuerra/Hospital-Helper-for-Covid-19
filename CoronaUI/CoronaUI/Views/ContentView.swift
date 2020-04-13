@@ -83,6 +83,7 @@ struct ContentView: View {
                 TabButton(tab: .informacoes, currentTab: $currentTab)
                 
                 Spacer() // set the distance
+                
                 Image("logo_RS")
                     .resizable()
                     .frame(width: 64, height: 46)
@@ -90,13 +91,10 @@ struct ContentView: View {
                 
             }.frame(width: 116, height: 1024)
                 .background(Color(red: 0.216, green: 0.231, blue: 0.325))
-                .padding(.trailing)
-            
-             
             
             VStack {
-                SearchBarView(searchText: $searchText)
-                getView(for: currentTab).padding(16)
+               TopBar()
+                getView(for: currentTab)
             }
             
             

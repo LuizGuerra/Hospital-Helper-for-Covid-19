@@ -30,6 +30,7 @@
 		8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8624402D4B003E18C6 /* Pacientes.swift */; };
 		8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D202444D1D500E27253 /* SearchBar.swift */; };
 		8AE30D262444D5B700E27253 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D252444D5B700E27253 /* TopBar.swift */; };
+		8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D282444DD3500E27253 /* Notificacoes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		8AD9BE8624402D4B003E18C6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
 		8AE30D202444D1D500E27253 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8AE30D252444D5B700E27253 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		8AE30D282444DD3500E27253 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				8AD9BE8424402912003E18C6 /* Dashboard.swift */,
+				8AE30D272444DD1E00E27253 /* Subviews */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -251,6 +254,14 @@
 				8A2EC8EC24402DF00056E1AE /* Informacoes.swift */,
 			);
 			path = Informacoes;
+			sourceTree = "<group>";
+		};
+		8AE30D272444DD1E00E27253 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				8AE30D282444DD3500E27253 /* Notificacoes.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */,
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
 				8AE30D262444D5B700E27253 /* TopBar.swift in Sources */,
 				8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */,
