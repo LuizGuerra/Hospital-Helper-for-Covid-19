@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct PacientCell: View {
+struct PatientCell: View {
     
     let patient: Patient
     @State var selected = false
@@ -76,7 +76,7 @@ struct PacientCell: View {
     
     func getStringDate() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/mm/yyyy"
+        dateFormatter.dateFormat = "dd/MM/yyyy"
         return dateFormatter.string(from: patient.firstSintoms)
     }
     
@@ -95,7 +95,7 @@ struct PacientCell: View {
 
 struct PacientCell_Previews: PreviewProvider {
     static var previews: some View {
-        PacientCell(patient: allPatients[0])
+        PatientCell(patient: allPatients[0])
             .previewLayout(.fixed(width: 1147, height: 75))
     }
 }
