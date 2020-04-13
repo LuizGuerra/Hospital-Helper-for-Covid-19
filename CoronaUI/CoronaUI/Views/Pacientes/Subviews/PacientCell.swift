@@ -68,7 +68,7 @@ struct PacientCell: View {
                     Text(getStringDate())
                     .font(.system(size: 20))
                         .padding(.horizontal, 44)
-    }
+                }
             }
             
         }
