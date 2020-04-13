@@ -12,15 +12,17 @@ struct Pacientes: View {
     
     var body: some View {
         HStack{
-                List {
-                    ForEach (0..<100) {val in
-                        Color(Pacientes.getRandomColor())
-                        Text("Dashboard vai ir aqui \(val)")
-                    }.frame(height: 120)
+            List {
+                ForEach (0..<100) {val in
+                    Color(Pacientes.getRandomColor())
+                    Text("Dashboard vai ir aqui \(val)")
+                }
             }
         }
         
     }
+    
+    
     static func getRandomColor () -> UIColor {
         switch Int.random(in: 0..<7) {
         case 0: return .green

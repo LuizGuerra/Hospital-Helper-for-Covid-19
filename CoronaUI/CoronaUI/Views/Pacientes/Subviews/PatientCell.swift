@@ -40,8 +40,11 @@ struct PatientCell: View {
                     } else {
                         unselectedBox()
                     }
+                    
+                    
                     Text(getIdString())
                         .font(.system(size: 20))
+                    
                     Text(patient.name)
                         .font(.system(size: 20))
                         .fontWeight(.bold)
@@ -57,16 +60,21 @@ struct PatientCell: View {
                     Text("\(patient.age)")
                         .font(.system(size: 20))
                         .padding(.horizontal, 44)
+                    
                     Text(patient.district)
-                    .font(.system(size: 20))
+                        .font(.system(size: 20))
                         .lineLimit(1)
                         .frame(width: 200, alignment: .leading)
+                    
+                    
                     Text("(\(patient.telephone.ddd)) \(patient.telephone.number)")
-                    .font(.system(size: 20))
+                        .font(.system(size: 20))
                         .foregroundColor(ApplicationColors.confirmationGreen)
                         .padding(.horizontal, 44)
+                    
+                    
                     Text(getStringDate())
-                    .font(.system(size: 20))
+                        .font(.system(size: 20))
                         .padding(.horizontal, 44)
                 }
             }

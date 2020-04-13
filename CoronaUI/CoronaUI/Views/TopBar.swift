@@ -21,7 +21,7 @@ struct TopBar: View {
             VStack(alignment: .trailing, spacing: 4) {
                 Text("Ronald Maciel")
                 Text("Enfermeiro")
-                    .font(.subheadline)
+                    .font(.footnote)
                     .fontWeight(.thin)
             }
             .padding()

@@ -35,6 +35,7 @@ struct SearchBarView: View {
                         self.showCancelButton = true
                     }, onCommit: onCommit)
                     
+                    
                 }
                 
                 
