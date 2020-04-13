@@ -13,22 +13,32 @@ struct SearchBarView: View {
     
     @Binding var searchText: String
     @State private var showCancelButton: Bool = false
-    var onCommit: () ->Void = {print("onCommit")}
+    
+    var onCommit: () -> Void = {print("onCommit")}
     
     var body: some View {
-        HStack {
+        HStack{
             HStack {
+                // Search Bar
                 Image(systemName: "magnifyingglass")
+                    .foregroundColor(Color(.lightGray))
                 
                 // Search text field
                 ZStack (alignment: .leading) {
                     if searchText.isEmpty { // Separate text for placeholder to give it the proper color
                         Text("Search")
+                            .foregroundColor(Color(.lightGray))
+                            
                     }
+                    
                     TextField("", text: $searchText, onEditingChanged: { isEditing in
                         self.showCancelButton = true
-                    }, onCommit: onCommit).foregroundColor(.primary)
+                    }, onCommit: onCommit)
+                    
                 }
+                
+                
+                
                 // Clear button
                 Button(action: {
                     self.searchText = ""
@@ -37,9 +47,10 @@ struct SearchBarView: View {
                 }
             }
             .padding(EdgeInsets(top: 8, leading: 6, bottom: 8, trailing: 6))
-            .foregroundColor(.secondary) // For magnifying glass and placeholder test
-            .background(Color(.tertiarySystemFill))
-            .cornerRadius(10.0)
+                .foregroundColor(.secondary) // For magnifying glass and placeholder test
+                .background(Color.white)
+                .cornerRadius(10.0)
+            
             
             if showCancelButton  {
                 // Cancel button
@@ -77,5 +88,11 @@ struct ResignKeyboardOnDragGesture: ViewModifier {
 extension View {
     func resignKeyboardOnDragGesture() -> some View {
         modifier(ResignKeyboardOnDragGesture())
+    }
+}
+
+struct SearchBar_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

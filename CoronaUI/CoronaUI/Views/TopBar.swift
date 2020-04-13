@@ -12,17 +12,19 @@ struct TopBar: View {
     @State var searchText: String = ""
     
     var body: some View {
-        HStack(spacing: 24) {
+        HStack(spacing: 30) {
             SearchBarView(searchText: $searchText)
-                .frame(height: 64)
-                .padding(.leading, 0)
+                .padding(.leading, 10)
+            
             
             
             VStack(alignment: .trailing, spacing: 4) {
                 Text("Ronald Maciel")
                 Text("Enfermeiro")
                     .font(.subheadline)
+                    .fontWeight(.thin)
             }
+            .padding()
             
             Image("logo").resizable().frame(width: 54, height: 54)
             
@@ -34,14 +36,15 @@ struct TopBar: View {
                     .frame(width: 40, height: 40)
             }
             
-            Spacer().frame(width: 1, height: 64)
+            Spacer()
+                .frame(width: 1, height: 64)
                 .background(Color(UIColor.lightGray))
             
             
             Button(action: {
                 
             }) {
-                Image(systemName: "bell")
+                Image("notif_off")
                     .renderingMode(.original)
                     .frame(width: 40, height: 40)
             }
@@ -52,11 +55,16 @@ struct TopBar: View {
                 Image("logout")
                     .renderingMode(.original)
                     .frame(width: 40, height: 40)
+                    .padding()
             }
-            
+            Spacer()
             
         }
+        .frame(height: 80)
+        .padding()
     }
+    
+    
 }
 
 struct TopBar_Previews: PreviewProvider {

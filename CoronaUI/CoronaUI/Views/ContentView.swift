@@ -89,16 +89,17 @@ struct ContentView: View {
                     .frame(width: 64, height: 46)
                     .padding()
                 
-            }.frame(width: 116, height: 1024)
+            }.frame(width: 116, height: UIScreen.main.bounds.height+1 )//ou seta 1024 mesmo azar
                 .background(Color(red: 0.216, green: 0.231, blue: 0.325))
             
             VStack {
-               TopBar()
+                TopBar()
                 getView(for: currentTab)
             }
             
             
         }
+        .statusBar(hidden: true)
         
         
     }
@@ -118,6 +119,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(searchText: "", currentTab: .dashboard)
-            //.previewLayout(.fixed(width: 1366, height: 1024))
+            .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }
