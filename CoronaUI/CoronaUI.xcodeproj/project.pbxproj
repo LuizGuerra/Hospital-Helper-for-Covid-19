@@ -26,6 +26,7 @@
 		04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5F427243E5BA700FD32B1 /* Patients.swift */; };
 		04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DA2444DD8D00200569 /* PatientCell.swift */; };
 		04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DD2444E60C00200569 /* ApplicationColors.swift */; };
+		89BEDCCF2446275600EC4C4A /* PacientesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */; };
 		8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EA24402DBF0056E1AE /* Agenda.swift */; };
 		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
 		8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8424402912003E18C6 /* Dashboard.swift */; };
@@ -78,6 +79,7 @@
 		04E5F427243E5BA700FD32B1 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 		04E7B4DA2444DD8D00200569 /* PatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCell.swift; sourceTree = "<group>"; };
 		04E7B4DD2444E60C00200569 /* ApplicationColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationColors.swift; sourceTree = "<group>"; };
+		89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacientesDetails.swift; sourceTree = "<group>"; };
 		8A2EC8EA24402DBF0056E1AE /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
 		8AD9BE8424402912003E18C6 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				04E7B4DA2444DD8D00200569 /* PatientCell.swift */,
+				89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
 				0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
+				89BEDCCF2446275600EC4C4A /* PacientesDetails.swift in Sources */,
 				0477C53B243E6697000B05C9 /* DistrictGeneration.swift in Sources */,
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
