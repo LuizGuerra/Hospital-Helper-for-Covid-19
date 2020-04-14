@@ -31,55 +31,50 @@ struct PatientCell: View {
     }
     
     var body: some View {
-        HStack {
-            
-            VStack(alignment: .leading) {
-                HStack {
-                    if selected {
-                        selectedBox()
-                    } else {
-                        unselectedBox()
+        ZStack {
+            Color.white
+            HStack {
+                VStack(alignment: .leading) {
+                    HStack {
+                        if selected {
+                            selectedBox()
+                        } else {
+                            unselectedBox()
+                        }
+                        Text(getIdString())
+                            .font(.system(size: 20))
+                        Text(patient.name)
+                            .font(.system(size: 20))
+                            .fontWeight(.bold)
+                            .padding()
+                            .frame(alignment: .leading)
                     }
-                    
-                    
-                    Text(getIdString())
-                        .font(.system(size: 20))
-                    
-                    Text(patient.name)
-                        .font(.system(size: 20))
-                        .fontWeight(.bold)
-                        .padding()
-                        .frame(alignment: .leading)
+                }
+                
+                Spacer()
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("\(patient.age)")
+                            .font(.system(size: 20))
+                            .padding(.horizontal, 44)
+                        Text(patient.district)
+                            .font(.system(size: 20))
+                            .lineLimit(1)
+                            .frame(width: 200, alignment: .leading)
+                        Text("(\(patient.telephone.ddd)) \(patient.telephone.number)")
+                            .font(.system(size: 20))
+                            .foregroundColor(ApplicationColors.confirmationGreen)
+                            .padding(.horizontal, 44)
+                        Text(getStringDate())
+                            .font(.system(size: 20))
+                            .padding(.horizontal, 44)
+                            .padding(.horizontal, 44)
+                    }
                 }
             }
-            
-            Spacer()
-            
-            VStack {
-                HStack {
-                    Text("\(patient.age)")
-                        .font(.system(size: 20))
-                        .padding(.horizontal, 44)
-                    
-                    Text(patient.district)
-                        .font(.system(size: 20))
-                        .lineLimit(1)
-                        .frame(width: 200, alignment: .leading)
-                    
-                    
-                    Text("(\(patient.telephone.ddd)) \(patient.telephone.number)")
-                        .font(.system(size: 20))
-                        .foregroundColor(ApplicationColors.confirmationGreen)
-                        .padding(.horizontal, 44)
-                    
-                    
-                    Text(getStringDate())
-                        .font(.system(size: 20))
-                        .padding(.horizontal, 44)
-                }
-            }
-            
-        }
+        }.frame(height: 75)
+        
     }
     
     func getStringDate() -> String {
