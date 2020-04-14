@@ -35,6 +35,9 @@
 		8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D202444D1D500E27253 /* SearchBar.swift */; };
 		8AE30D262444D5B700E27253 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D252444D5B700E27253 /* TopBar.swift */; };
 		8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D282444DD3500E27253 /* Notificacoes.swift */; };
+		8AFA1C4324463545005E2707 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C4224463545005E2707 /* ProfileCard.swift */; };
+		8AFA1C4524463864005E2707 /* NotificationsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C4424463864005E2707 /* NotificationsCard.swift */; };
+		8AFA1C47244647C5005E2707 /* PacientsPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C46244647C5005E2707 /* PacientsPercent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		8AE30D202444D1D500E27253 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8AE30D252444D5B700E27253 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		8AE30D282444DD3500E27253 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
+		8AFA1C4224463545005E2707 /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
+		8AFA1C4424463864005E2707 /* NotificationsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCard.swift; sourceTree = "<group>"; };
+		8AFA1C46244647C5005E2707 /* PacientsPercent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacientsPercent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,9 @@
 			isa = PBXGroup;
 			children = (
 				8AE30D282444DD3500E27253 /* Notificacoes.swift */,
+				8AFA1C4224463545005E2707 /* ProfileCard.swift */,
+				8AFA1C4424463864005E2707 /* NotificationsCard.swift */,
+				8AFA1C46244647C5005E2707 /* PacientsPercent.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -439,9 +448,11 @@
 				8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */,
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
+				8AFA1C47244647C5005E2707 /* PacientsPercent.swift in Sources */,
 				8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
+				8AFA1C4524463864005E2707 /* NotificationsCard.swift in Sources */,
 				0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
 				89BEDCD22446293C00EC4C4A /* Dados&Sintomas.swift in Sources */,
@@ -454,6 +465,7 @@
 				04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */,
 				8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
+				8AFA1C4324463545005E2707 /* ProfileCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

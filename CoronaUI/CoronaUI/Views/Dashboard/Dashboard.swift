@@ -10,8 +10,22 @@ import SwiftUI
 
 struct Dashboard: View {
     var body: some View {
-        HStack {
-            Color(.yellow)
+        VStack(alignment: .leading) {
+            
+            
+            HStack {
+                ProfileCard().padding(.trailing, 100)
+                NotificationsCard()
+            }
+            HStack {
+                PacientsPercent()
+                PacientsPercent()
+            }
+            
+            HStack {
+                PacientsPercent()
+                PacientsPercent()
+            }
         }
         
     }
