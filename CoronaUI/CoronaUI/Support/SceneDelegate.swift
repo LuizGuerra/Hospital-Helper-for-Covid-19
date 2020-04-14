@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
 //        let contentView = ContentView(searchText: "", currentTab: .dashboard).environment(\.managedObjectContext, context)
         
-        let contentView = PacientesDetails()
+        let contentView = PacientesDetails().environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
