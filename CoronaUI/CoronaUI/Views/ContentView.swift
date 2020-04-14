@@ -100,6 +100,7 @@ struct ContentView: View {
             
         }
         .statusBar(hidden: true)
+        .background(Color(UIColor.secondarySystemBackground))
         
         
     }
