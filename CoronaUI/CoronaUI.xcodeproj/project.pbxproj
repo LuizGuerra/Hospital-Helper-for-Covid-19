@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0438A9382446290C008D6929 /* PatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438A9372446290C008D6929 /* PatientList.swift */; };
-		0438A93A24462E35008D6929 /* PatientsListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438A93924462E35008D6929 /* PatientsListHeader.swift */; };
+		0429C8702447774A006A995C /* PatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429C86E24477749006A995C /* PatientList.swift */; };
+		0429C8712447774A006A995C /* PatientsListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429C86F24477749006A995C /* PatientsListHeader.swift */; };
 		045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045971AA243CF659007F3E29 /* AppDelegate.swift */; };
 		045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045971AC243CF659007F3E29 /* SceneDelegate.swift */; };
 		045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045971AE243CF659007F3E29 /* CoronaUI.xcdatamodeld */; };
@@ -60,8 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0438A9372446290C008D6929 /* PatientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientList.swift; sourceTree = "<group>"; };
-		0438A93924462E35008D6929 /* PatientsListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsListHeader.swift; sourceTree = "<group>"; };
+		0429C86E24477749006A995C /* PatientList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientList.swift; sourceTree = "<group>"; };
+		0429C86F24477749006A995C /* PatientsListHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsListHeader.swift; sourceTree = "<group>"; };
 		045971A7243CF659007F3E29 /* CoronaUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronaUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045971AA243CF659007F3E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045971AC243CF659007F3E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +126,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0429C86D24477749006A995C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0429C86E24477749006A995C /* PatientList.swift */,
+				0429C86F24477749006A995C /* PatientsListHeader.swift */,
+				04E7B4DA2444DD8D00200569 /* PatientCell.swift */,
+			);
+			name = Subviews;
+			path = CoronaUI/Views/Pacientes/Subviews;
+			sourceTree = SOURCE_ROOT;
+		};
 		0459719E243CF659007F3E29 = {
 			isa = PBXGroup;
 			children = (
@@ -221,9 +232,7 @@
 		04E7B4D92444DD6200200569 /* PacientesDetails */ = {
 			isa = PBXGroup;
 			children = (
-				0438A9372446290C008D6929 /* PatientList.swift */,
-				0438A93924462E35008D6929 /* PatientsListHeader.swift */,
-				04E7B4DA2444DD8D00200569 /* PatientCell.swift */,
+				0429C86D24477749006A995C /* Subviews */,
 				89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */,
 				89BEDCD02446290600EC4C4A /* SubviewsPacientesDetails */,
 			);
@@ -283,7 +292,6 @@
 			isa = PBXGroup;
 			children = (
 				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
-				04E7B4DA2444DD8D00200569 /* PatientCell.swift */,
 				04E7B4D92444DD6200200569 /* PacientesDetails */,
 			);
 			path = Pacientes;
@@ -452,7 +460,6 @@
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
 				8AE30D262444D5B700E27253 /* TopBar.swift in Sources */,
 				8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */,
-				0438A93A24462E35008D6929 /* PatientsListHeader.swift in Sources */,
 				8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */,
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
@@ -461,14 +468,15 @@
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
 				8AFA1C4524463864005E2707 /* NotificationsCard.swift in Sources */,
+				0429C8712447774A006A995C /* PatientsListHeader.swift in Sources */,
 				0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
 				89BEDCD22446293C00EC4C4A /* Dados&Sintomas.swift in Sources */,
 				89BEDCCF2446275600EC4C4A /* PacientesDetails.swift in Sources */,
 				0477C53B243E6697000B05C9 /* DistrictGeneration.swift in Sources */,
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
-				0438A9382446290C008D6929 /* PatientList.swift in Sources */,
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
+				0429C8702447774A006A995C /* PatientList.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
 				8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */,
 				04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */,
