@@ -9,7 +9,7 @@
 import Foundation
 
 func getDistrict() -> String {
-    return possibleSurnames.randomElement() ?? "Centro"
+    return possibleDistricts.randomElement() ?? "Centro"
 }
 
 let possibleDistricts = [
