@@ -19,12 +19,12 @@ struct Dashboard: View {
             }
             HStack {
                 PacientsPercent()
-                PacientsPercent()
+                LocalCard()
             }
             
             HStack {
-                PacientsPercent()
-                PacientsPercent()
+                CalendarCard()
+                TwitterCard()
             }
         }
         
