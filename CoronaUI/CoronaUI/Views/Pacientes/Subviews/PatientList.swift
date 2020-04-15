@@ -1,0 +1,55 @@
+//
+//  PatientList.swift
+//  CoronaUI
+//
+//  Created by Luiz Pedro Franciscatto Guerra on 14/04/20.
+//  Copyright © 2020 LuizGuerra. All rights reserved.
+//
+
+import SwiftUI
+
+enum ShowPatientList {
+    case confirmed, suspect, all
+}
+
+struct PatientList: View {
+    
+    @State var showPatientList: ShowPatientList
+    
+    let patientList: [Patient]
+    
+    var body: some View {
+        ZStack {
+            ApplicationColors.lightGray
+            VStack {
+                PatientsListHeader()
+                ScrollView(.vertical) {
+                    ForEach(getPatientList(), id: \.id) { patient in
+                        PatientCell(patient: patient)
+                            .cornerRadius(10)
+                            .padding(.vertical, 10)
+                    }
+                }
+            }
+        }        
+    }
+    
+    func getPatientList () -> [Patient] {
+        switch showPatientList {
+        case .confirmed:
+            return patientList.filter { $0.confirmed }
+        case .suspect:
+            return patientList.filter { !$0.confirmed }
+        default:
+            return patientList
+        }
+    }
+    
+}
+
+struct PatientList_Previews: PreviewProvider {
+    static var previews: some View {
+        PatientList(showPatientList: .confirmed, patientList: allPatients)
+            .previewLayout(.fixed(width: 1150, height: 1700))
+    }
+}

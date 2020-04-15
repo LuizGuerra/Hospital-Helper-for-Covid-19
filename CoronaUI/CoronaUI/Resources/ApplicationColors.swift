@@ -13,5 +13,7 @@ class ApplicationColors {
     
     static let secondaryGray = Color(red: 201/255, green: 214/255, blue: 223/255)
     static let confirmationGreen = Color(red: 36/255, green: 184/255, blue: 148/255)
+    static let lightGray = Color(red: 250/255, green: 250/255, blue: 250/255)
+    static let thirdGray = Color(red: 201/255, green: 197/255, blue: 207/255)
     
 }
