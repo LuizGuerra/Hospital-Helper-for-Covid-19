@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct PatientsListHeader: View {
+    
     fileprivate func externalLine() -> some View {
         return Rectangle()
             .fill(ApplicationColors.thirdGray)
@@ -30,10 +31,7 @@ struct PatientsListHeader: View {
                             .cornerRadius(2)
                             .padding(.horizontal, 22)
                         Text("n.")
-                            .font(.system(size: 20))
                         Text("Nome")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
                             .padding(.horizontal, 36)
                             .frame(alignment: .leading)
                     }
@@ -41,35 +39,35 @@ struct PatientsListHeader: View {
                 
                 Spacer()
                 
-                VStack {
+                VStack(alignment: .leading) {
+                    
                     HStack {
                         Text("Idade")
-                            .font(.system(size: 20))
-                            .padding(.horizontal, 44)
+                            .frame(width: 50, alignment: .leading)
+                            .padding(.trailing, 70)
                         Text("Bairro")
-                        .font(.system(size: 20))
                             .lineLimit(1)
                             .frame(width: 200, alignment: .leading)
-                        Text("Tefelone")
-                        .font(.system(size: 20))
-                            .foregroundColor(ApplicationColors.confirmationGreen)
-                            .padding(.horizontal, 44)
+                        Text("Telefone")
+                            .frame(width: 160, alignment: .leading)
+                            .padding(.trailing, 44)
                         Text("Início sintomas")
-                        .font(.system(size: 20))
-                            .padding(.horizontal, 44)
+                            .frame(width: 130, alignment: .leading)
+                            .padding(.trailing, 36)
+                        
                     }
                 }
                 
             }
             Spacer()
             externalLine()
-        }.frame(height: 51)
+        }.frame(height: 51).font(.system(size: 20))
     }
 }
 
 struct PatientsListHeader_Previews: PreviewProvider {
     static var previews: some View {
         PatientsListHeader()
-        .previewLayout(.fixed(width: 1147, height: 51))
+        .previewLayout(.fixed(width: 1147, height: 55))
     }
 }
