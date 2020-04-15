@@ -150,15 +150,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0429C86D24477749006A995C /* Subviews */ = {
+		0429C86D24477749006A995C /* PatientList */ = {
 			isa = PBXGroup;
 			children = (
 				0429C86E24477749006A995C /* PatientList.swift */,
 				0429C86F24477749006A995C /* PatientsListHeader.swift */,
 				04E7B4DA2444DD8D00200569 /* PatientCell.swift */,
+				04E7B4D92444DD6200200569 /* PacientesDetails */,
 			);
-			name = Subviews;
-			path = CoronaUI/Views/Pacientes/Subviews;
+			name = PatientList;
+			path = CoronaUI/Views/Pacientes/PatientList;
 			sourceTree = SOURCE_ROOT;
 		};
 		0459719E243CF659007F3E29 = {
@@ -257,7 +258,6 @@
 		04E7B4D92444DD6200200569 /* PacientesDetails */ = {
 			isa = PBXGroup;
 			children = (
-				0429C86D24477749006A995C /* Subviews */,
 				89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */,
 				89BEDCD02446290600EC4C4A /* FirstCardSubview */,
 				8960FBA8244784B000772C6F /* SecondCardSubview */,
@@ -380,8 +380,8 @@
 		8AE30D222444D3DA00E27253 /* Pacientes */ = {
 			isa = PBXGroup;
 			children = (
+				0429C86D24477749006A995C /* PatientList */,
 				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
-				04E7B4D92444DD6200200569 /* PacientesDetails */,
 			);
 			path = Pacientes;
 			sourceTree = "<group>";
