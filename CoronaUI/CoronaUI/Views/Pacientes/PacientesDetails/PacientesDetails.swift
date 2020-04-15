@@ -37,11 +37,11 @@ struct PacientesDetails: View {
                         
                         Text("SEM DOENÇAS PRÉ-EXISTENTES")
                             .font(.system(size: 12, weight: .medium))
-//                            .lineLimit(1)
+                            .lineLimit(1)
                     }
                     
                     
-                    Spacer(minLength: 217)
+                    Spacer(minLength: 150)
                     
                     
                     Image("male")
@@ -100,6 +100,8 @@ struct PacientesDetails: View {
             // Diagnostic of the symptoms
             VStack(alignment: .leading) {
                 HStack {
+                    
+                    // Diagnostic Stack
                     VStack(alignment: .leading, spacing: 14){
                         Text("DIAGNÓSTICO")
                             .font(.system(size: 12, weight: .medium))
@@ -116,14 +118,14 @@ struct PacientesDetails: View {
                     }
                     
                     
-                    
+                    // Symptoms Stack
                     VStack(alignment: .leading, spacing: 14) {
                         Text("INÍCIO SINTOMAS")
                             .font(.system(size: 12, weight: .medium))
                             .lineLimit(1)
                             .foregroundColor(Color(UIColor(red: 0.588, green: 0.612, blue: 0.729, alpha: 1)))
                             .frame(width: 105)
-                            
+                        
                         
                         Text("26/03/2020")
                             .font(.headline)
@@ -134,6 +136,8 @@ struct PacientesDetails: View {
                     .padding(.leading, 150)
                     .padding(.trailing, 20)
                     
+                    
+                    // Edit Button
                     Button(action: {
                         // edit
                     }) {
@@ -146,8 +150,9 @@ struct PacientesDetails: View {
                 }
                 
                 
+                // Access Button
                 Button(action: {
-                    
+                    // access test
                 }) {
                     Text("Acessar teste")
                         .frame(width: 210, height: 60)
@@ -156,16 +161,19 @@ struct PacientesDetails: View {
                         .foregroundColor(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 1)))
                         .border(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 1)), width: 2)
                         .cornerRadius(3)
-                    
                 }
+                
                 
                 HStack {
                     Image("alert-circled")
                     Text("Paciente não respondeu o acompanhamento de hoje.")
                         .foregroundColor(Color.red)
                 }
-                .padding(.bottom, 40)
+                .padding(.trailing)
+                .padding(.vertical)
                 
+                
+                // Notes Stack
                 VStack(alignment: .leading, spacing: 6) {
                     Text("NOTAS")
                         .font(.custom("SF Pro Display", size: 12))
@@ -179,10 +187,7 @@ struct PacientesDetails: View {
             }
         }
         .frame(width: 1157, height: 352)
-                                .background(Color.gray)
-            .cornerRadius(10)
-        
-        
+        .cornerRadius(10)
     }
 }
 
