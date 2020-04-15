@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Tweet {
+struct Tweet: Hashable {
     var user: String
     var body: String
     var date: Date
