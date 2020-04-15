@@ -11,25 +11,28 @@ import SwiftUI
 struct PacientesDetails: View {
     
     var body: some View {
-        
-        HStack {
+        VStack {
+            HStack {
+                
+                
+                // Personal data of the patient
+                PersonalDataPatient()
+                
+                Spacer()
+                    .frame(width: 1, height: 271)
+                    .background(Color(UIColor.lightGray))
+                    .padding(.all, 40)
+                
+                
+                // Diagnostic of the symptoms
+                DiagnosticPatient()
+                
+            }
+            .frame(width: 1157, height: 352)
+            .cornerRadius(10)
             
-            
-            // Personal data of the patient
-            PersonalDataPatient()
-            
-            Spacer()
-                .frame(width: 1, height: 271)
-                .background(Color(UIColor.lightGray))
-                .padding(.all, 40)
-            
-            
-            // Diagnostic of the symptoms
-            DiagnosticPatient()
-            
+            SecondCardDetailTopBar(currentTab: .acompanhamento)
         }
-        .frame(width: 1157, height: 352)
-        .cornerRadius(10)
     }
 }
 

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct DiagnosticPatient: View {
+    
     var body: some View {
         
         VStack(alignment: .leading) {
