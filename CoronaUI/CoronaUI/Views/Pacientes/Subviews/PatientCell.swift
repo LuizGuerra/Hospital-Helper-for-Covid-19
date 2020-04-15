@@ -4,7 +4,7 @@
 //
 //  Created by Luiz Pedro Franciscatto Guerra on 13/04/20.
 //  Copyright © 2020 LuizGuerra. All rights reserved.
-//
+// ␀
 
 import SwiftUI
 
@@ -42,9 +42,7 @@ struct PatientCell: View {
                             unselectedBox()
                         }
                         Text(getIdString())
-                            .font(.system(size: 20))
                         Text(patient.name)
-                            .font(.system(size: 20))
                             .fontWeight(.bold)
                             .padding()
                             .frame(alignment: .leading)
@@ -56,24 +54,31 @@ struct PatientCell: View {
                 VStack(alignment: .leading) {
                     HStack {
                         Text("\(patient.age)")
-                            .font(.system(size: 20))
-                            .padding(.horizontal, 44)
+                            .frame(width: 30, alignment: .leading)
+                            .padding(.trailing, 90)
                         Text(patient.district)
-                            .font(.system(size: 20))
                             .lineLimit(1)
                             .frame(width: 200, alignment: .leading)
-                        Text("(\(patient.telephone.ddd)) \(patient.telephone.number)")
-                            .font(.system(size: 20))
+                        Text(getTelephone())
                             .foregroundColor(ApplicationColors.confirmationGreen)
-                            .padding(.horizontal, 44)
+                            .frame(width: 160, alignment: .leading)
+                            .padding(.trailing, 44)
                         Text(getStringDate())
-                            .font(.system(size: 20))
-                            .padding(.horizontal, 44)
+                            .frame(width: 120, alignment: .leading)
+                            .padding(.trailing, 44)
                     }
                 }
             }
-        }.frame(height: 75)
+        }.frame(height: 75).font(.system(size: 20))
         
+    }
+    
+    func getTelephone() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .none
+        let formattedNumber = numberFormatter.string(from: NSNumber(value: patient.telephone.number))
+        print("heyo \(formattedNumber ?? "nope...")")
+        return "(\(patient.telephone.ddd)) \(formattedNumber ?? "\(patient.telephone.number)")"
     }
     
     func getStringDate() -> String {
@@ -101,4 +106,3 @@ struct PacientCell_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 1147, height: 75))
     }
 }
-
