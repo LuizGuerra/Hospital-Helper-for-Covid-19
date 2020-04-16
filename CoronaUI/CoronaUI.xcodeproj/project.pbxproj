@@ -35,7 +35,6 @@
 		8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EA24402DBF0056E1AE /* Agenda.swift */; };
 		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
 		8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8424402912003E18C6 /* Dashboard.swift */; };
-		8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8624402D4B003E18C6 /* Pacientes.swift */; };
 		8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D202444D1D500E27253 /* SearchBar.swift */; };
 		8AE30D262444D5B700E27253 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D252444D5B700E27253 /* TopBar.swift */; };
 		8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D282444DD3500E27253 /* Notificacoes.swift */; };
@@ -96,7 +95,6 @@
 		8A2EC8EA24402DBF0056E1AE /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
 		8AD9BE8424402912003E18C6 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		8AD9BE8624402D4B003E18C6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
 		8AE30D202444D1D500E27253 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8AE30D252444D5B700E27253 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		8AE30D282444DD3500E27253 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 		8AE30D222444D3DA00E27253 /* Pacientes */ = {
 			isa = PBXGroup;
 			children = (
-				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
 				04E7B4D92444DD6200200569 /* PacientesDetails */,
 			);
 			path = Pacientes;
@@ -479,7 +476,6 @@
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
 				8AFA1C47244647C5005E2707 /* PacientsPercent.swift in Sources */,
-				8AD9BE8724402D4B003E18C6 /* Pacientes.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
 				8AFA1C4524463864005E2707 /* NotificationsCard.swift in Sources */,
