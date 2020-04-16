@@ -54,8 +54,8 @@ struct SubTabButton: View {
                 Button(action: {
                     print("Selected the \(self.tab.nameOfTab) one")
                     self.currentTab = self.tab
-                    self.offset =   view.frame(in: .global).midX
-                    
+                    self.offset =   (view.frame(in: .global).midX - UIScreen.main.bounds.midX) - 60
+                    print("off set \(self.offset)")
                 }) {
                     Text("\(self.tab.nameOfTab)")
                         .fontWeight(.bold)
@@ -74,14 +74,15 @@ struct SubTabButton: View {
 struct CustomPageControll: View {
     @Binding var newOffSet: CGFloat
     var body: some View {
+//        VStack(alignment: .leading) {
+            
         HStack {
             RoundedRectangle(cornerRadius: 10).fill().frame(width: 190, height: 4)
                 .foregroundColor(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 1)))
                 .offset(x: newOffSet )
         }
-        .onAppear {
-            print(self.newOffSet)
-        }
+        .padding(.leading, 0)
+//        }
     }
 
 }
