@@ -51,7 +51,11 @@ struct SubTabButton: View {
             self.currentTab = self.tab
         }) {
             Text("\(self.tab.nameOfTab)")
+                .fontWeight(.bold)
+                .foregroundColor(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 1)))
                 .padding()
+            
+            
         }
         
     }
@@ -82,6 +86,12 @@ struct SecondCardDetailTopBar: View {
                 SubTabButton(tab: .pessoasProximas, currentTab: $currentTab)
             }
             .frame(width: 1156,height: 96)
+            .background(Color(UIColor.systemBackground))
+            .cornerRadius(10)
+            .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
+            .font(.system(size: 20))
+            .foregroundColor(Color(UIColor.black))
+            
             
             VStack{
                 getView(for: currentTab)

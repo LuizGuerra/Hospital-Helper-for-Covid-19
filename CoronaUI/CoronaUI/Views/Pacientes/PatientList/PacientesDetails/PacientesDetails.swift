@@ -11,7 +11,8 @@ import SwiftUI
 struct PacientesDetails: View {
     
     var body: some View {
-        VStack {
+        
+        VStack(spacing: 20) {
             HStack {
                 
                 
@@ -29,12 +30,15 @@ struct PacientesDetails: View {
                 
             }
             .frame(width: 1157, height: 352)
+            .background(Color(UIColor.systemBackground))
             .cornerRadius(10)
+            .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
             
             SecondCardDetailTopBar(currentTab: .acompanhamento)
         }
     }
 }
+
 
 struct PacientesDetails_Previews: PreviewProvider {
     static var previews: some View {

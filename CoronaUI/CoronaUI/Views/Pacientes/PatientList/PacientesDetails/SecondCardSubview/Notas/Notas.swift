@@ -11,7 +11,7 @@ import SwiftUI
 struct Notas: View {
     var body: some View {
         HStack {
-            Color(.red)
+            Color(.orange)
         }
         
     }
