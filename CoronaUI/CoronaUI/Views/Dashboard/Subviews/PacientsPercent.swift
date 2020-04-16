@@ -17,13 +17,14 @@ struct PacientsPercent: View {
                 Text("Pacientes")
                     .font(.custom("SFProDisplay-Bold", size: 32))
                     .padding(.leading, 8)
-                }.padding(.leading, 37)
-                .padding(.top, 33)
+            }.padding(.leading, 36)
+                .padding(.top, 32)
+                
             
             HStack(spacing: 10) {
                 
                 //confirmados
-                VStack(spacing: 6) {
+                VStack(spacing: 4) {
                     Text("20").font(.custom("SFProDisplay-Bold", size: 81))
                         .foregroundColor(Color(UIColor(red: 0.9, green: 0.6, blue: 0.6, alpha: 1)))
                     HStack {
@@ -34,14 +35,14 @@ struct PacientsPercent: View {
                     Text("Confirmados").bold()
                 }.frame(width: 270)
                 
-                Rectangle().frame(width: 0.5, height: 170).foregroundColor(Color.secondary)
+                Rectangle().frame(width: 0.3, height: 170).foregroundColor(Color.secondary)
                 
                 
                 //suspeitos
-                VStack(spacing: 6)  {
+                VStack(spacing: 4)  {
                     Text("10").font(.custom("SFProDisplay-Bold", size: 81))
                         .foregroundColor(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 0.8)))
-                        
+                    
                     HStack {
                         Image("green-arrow")
                         Text("10 %").foregroundColor(Color.green)
@@ -51,12 +52,10 @@ struct PacientsPercent: View {
                     
                 }.frame(width: 270)
                 
-               
-            }
-            
-            .padding()
+            }.padding(.top, 0)
         }
-            .background(Color(UIColor.systemBackground))
+        .frame(width: CGFloat.dashCardWidth(), height:  CGFloat.dashCardHeight())
+        .background(Color(UIColor.systemBackground))
         .cornerRadius(10)
         .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
     }

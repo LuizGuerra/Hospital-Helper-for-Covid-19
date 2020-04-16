@@ -28,12 +28,21 @@
 		04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5F427243E5BA700FD32B1 /* Patients.swift */; };
 		04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DA2444DD8D00200569 /* PatientCell.swift */; };
 		04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DD2444E60C00200569 /* ApplicationColors.swift */; };
+		8945ADE32447AAC900E3924B /* Acompanhamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945ADE22447AAC900E3924B /* Acompanhamento.swift */; };
+		8945ADE62447AAF300E3924B /* Dado_Sintomas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945ADE52447AAF300E3924B /* Dado_Sintomas.swift */; };
+		8945ADE92447AB0B00E3924B /* Mensagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945ADE82447AB0B00E3924B /* Mensagens.swift */; };
+		8945ADEC2447AB3000E3924B /* Notas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945ADEB2447AB3000E3924B /* Notas.swift */; };
+		8945ADEF2447AB5400E3924B /* PessoasProximas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945ADEE2447AB5400E3924B /* PessoasProximas.swift */; };
 		8960FBAA244784FA00772C6F /* PersonalDataPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960FBA9244784FA00772C6F /* PersonalDataPatient.swift */; };
 		8960FBAC2447851F00772C6F /* DiagnosticPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960FBAB2447851F00772C6F /* DiagnosticPatient.swift */; };
 		89BEDCCF2446275600EC4C4A /* PacientesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */; };
-		89BEDCD22446293C00EC4C4A /* Dados&Sintomas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEDCD12446293C00EC4C4A /* Dados&Sintomas.swift */; };
+		89BEDCD22446293C00EC4C4A /* SecondCardTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEDCD12446293C00EC4C4A /* SecondCardTopBar.swift */; };
 		8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EA24402DBF0056E1AE /* Agenda.swift */; };
 		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
+		8A91958524478D9C00DC3E59 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A91958424478D9C00DC3E59 /* Tweet.swift */; };
+		8A9195872447925E00DC3E59 /* TwitterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9195862447925E00DC3E59 /* TwitterCard.swift */; };
+		8A91958924479ECE00DC3E59 /* CalendarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A91958824479ECE00DC3E59 /* CalendarCard.swift */; };
+		8AB2D3CA24477AA70058945D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2D3C924477AA70058945D /* View+Extension.swift */; };
 		8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9BE8424402912003E18C6 /* Dashboard.swift */; };
 		8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D202444D1D500E27253 /* SearchBar.swift */; };
 		8AE30D262444D5B700E27253 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE30D252444D5B700E27253 /* TopBar.swift */; };
@@ -41,6 +50,7 @@
 		8AFA1C4324463545005E2707 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C4224463545005E2707 /* ProfileCard.swift */; };
 		8AFA1C4524463864005E2707 /* NotificationsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C4424463864005E2707 /* NotificationsCard.swift */; };
 		8AFA1C47244647C5005E2707 /* PacientsPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C46244647C5005E2707 /* PacientsPercent.swift */; };
+		8AFA1C4924465670005E2707 /* LocalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA1C4824465670005E2707 /* LocalCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,12 +98,21 @@
 		04E5F427243E5BA700FD32B1 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 		04E7B4DA2444DD8D00200569 /* PatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCell.swift; sourceTree = "<group>"; };
 		04E7B4DD2444E60C00200569 /* ApplicationColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationColors.swift; sourceTree = "<group>"; };
+		8945ADE22447AAC900E3924B /* Acompanhamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acompanhamento.swift; sourceTree = "<group>"; };
+		8945ADE52447AAF300E3924B /* Dado_Sintomas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dado_Sintomas.swift; sourceTree = "<group>"; };
+		8945ADE82447AB0B00E3924B /* Mensagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensagens.swift; sourceTree = "<group>"; };
+		8945ADEB2447AB3000E3924B /* Notas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notas.swift; sourceTree = "<group>"; };
+		8945ADEE2447AB5400E3924B /* PessoasProximas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PessoasProximas.swift; sourceTree = "<group>"; };
 		8960FBA9244784FA00772C6F /* PersonalDataPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPatient.swift; sourceTree = "<group>"; };
 		8960FBAB2447851F00772C6F /* DiagnosticPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticPatient.swift; sourceTree = "<group>"; };
 		89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacientesDetails.swift; sourceTree = "<group>"; };
-		89BEDCD12446293C00EC4C4A /* Dados&Sintomas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dados&Sintomas.swift"; sourceTree = "<group>"; };
+		89BEDCD12446293C00EC4C4A /* SecondCardTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCardTopBar.swift; sourceTree = "<group>"; };
 		8A2EC8EA24402DBF0056E1AE /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
+		8A91958424478D9C00DC3E59 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		8A9195862447925E00DC3E59 /* TwitterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCard.swift; sourceTree = "<group>"; };
+		8A91958824479ECE00DC3E59 /* CalendarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCard.swift; sourceTree = "<group>"; };
+		8AB2D3C924477AA70058945D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		8AD9BE8424402912003E18C6 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		8AE30D202444D1D500E27253 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8AE30D252444D5B700E27253 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
@@ -101,6 +120,7 @@
 		8AFA1C4224463545005E2707 /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
 		8AFA1C4424463864005E2707 /* NotificationsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCard.swift; sourceTree = "<group>"; };
 		8AFA1C46244647C5005E2707 /* PacientsPercent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacientsPercent.swift; sourceTree = "<group>"; };
+		8AFA1C4824465670005E2707 /* LocalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,15 +148,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0429C86D24477749006A995C /* Subviews */ = {
+		0429C86D24477749006A995C /* PatientList */ = {
 			isa = PBXGroup;
 			children = (
 				0429C86E24477749006A995C /* PatientList.swift */,
 				0429C86F24477749006A995C /* PatientsListHeader.swift */,
 				04E7B4DA2444DD8D00200569 /* PatientCell.swift */,
+				04E7B4D92444DD6200200569 /* PacientesDetails */,
 			);
-			name = Subviews;
-			path = CoronaUI/Views/Pacientes/Subviews;
+			name = PatientList;
+			path = CoronaUI/Views/Pacientes/PatientList;
 			sourceTree = SOURCE_ROOT;
 		};
 		0459719E243CF659007F3E29 = {
@@ -162,6 +183,7 @@
 		045971A9243CF659007F3E29 /* CoronaUI */ = {
 			isa = PBXGroup;
 			children = (
+				8A91958324478D8D00DC3E59 /* Model */,
 				04E7B4DC2444E5FF00200569 /* Resources */,
 				8AD9BE82244028E7003E18C6 /* Views */,
 				04BF5645243D10C90083867C /* FakeNetwork */,
@@ -234,9 +256,9 @@
 		04E7B4D92444DD6200200569 /* PacientesDetails */ = {
 			isa = PBXGroup;
 			children = (
-				0429C86D24477749006A995C /* Subviews */,
 				89BEDCCE2446275600EC4C4A /* PacientesDetails.swift */,
-				89BEDCD02446290600EC4C4A /* Subviews */,
+				89BEDCD02446290600EC4C4A /* FirstCardSubview */,
+				8960FBA8244784B000772C6F /* SecondCardSubview */,
 			);
 			path = PacientesDetails;
 			sourceTree = "<group>";
@@ -245,16 +267,62 @@
 			isa = PBXGroup;
 			children = (
 				04E7B4DD2444E60C00200569 /* ApplicationColors.swift */,
+				8AB2D3C924477AA70058945D /* View+Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		8960FBA8244784B000772C6F /* SubviewSecondCard */ = {
+		8945ADE42447AAD800E3924B /* Acompanhamento */ = {
 			isa = PBXGroup;
 			children = (
-				89BEDCD12446293C00EC4C4A /* Dados&Sintomas.swift */,
+				8945ADE22447AAC900E3924B /* Acompanhamento.swift */,
 			);
-			path = SubviewSecondCard;
+			path = Acompanhamento;
+			sourceTree = "<group>";
+		};
+		8945ADE72447AAFE00E3924B /* Dados e Sintomas */ = {
+			isa = PBXGroup;
+			children = (
+				8945ADE52447AAF300E3924B /* Dado_Sintomas.swift */,
+			);
+			path = "Dados e Sintomas";
+			sourceTree = "<group>";
+		};
+		8945ADEA2447AB1600E3924B /* Mensagens */ = {
+			isa = PBXGroup;
+			children = (
+				8945ADE82447AB0B00E3924B /* Mensagens.swift */,
+			);
+			path = Mensagens;
+			sourceTree = "<group>";
+		};
+		8945ADED2447AB3A00E3924B /* Notas */ = {
+			isa = PBXGroup;
+			children = (
+				8945ADEB2447AB3000E3924B /* Notas.swift */,
+			);
+			path = Notas;
+			sourceTree = "<group>";
+		};
+		8945ADF02447AB5B00E3924B /* Pessoas Proximas */ = {
+			isa = PBXGroup;
+			children = (
+				8945ADEE2447AB5400E3924B /* PessoasProximas.swift */,
+			);
+			path = "Pessoas Proximas";
+			sourceTree = "<group>";
+		};
+		8960FBA8244784B000772C6F /* SecondCardSubview */ = {
+			isa = PBXGroup;
+			children = (
+				89BEDCD12446293C00EC4C4A /* SecondCardTopBar.swift */,
+				8945ADE72447AAFE00E3924B /* Dados e Sintomas */,
+				8945ADEA2447AB1600E3924B /* Mensagens */,
+				8945ADE42447AAD800E3924B /* Acompanhamento */,
+				8945ADED2447AB3A00E3924B /* Notas */,
+				8945ADF02447AB5B00E3924B /* Pessoas Proximas */,
+			);
+			path = SecondCardSubview;
 			sourceTree = "<group>";
 		};
 		899D81D9243FEB0B002603E7 /* Support */ = {
@@ -267,14 +335,21 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		89BEDCD02446290600EC4C4A /* Subviews */ = {
+		89BEDCD02446290600EC4C4A /* FirstCardSubview */ = {
 			isa = PBXGroup;
 			children = (
 				8960FBA9244784FA00772C6F /* PersonalDataPatient.swift */,
 				8960FBAB2447851F00772C6F /* DiagnosticPatient.swift */,
-				8960FBA8244784B000772C6F /* SubviewSecondCard */,
 			);
-			path = Subviews;
+			path = FirstCardSubview;
+			sourceTree = "<group>";
+		};
+		8A91958324478D8D00DC3E59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A91958424478D9C00DC3E59 /* Tweet.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8AD9BE82244028E7003E18C6 /* Views */ = {
@@ -303,6 +378,8 @@
 		8AE30D222444D3DA00E27253 /* Pacientes */ = {
 			isa = PBXGroup;
 			children = (
+				0429C86D24477749006A995C /* PatientList */,
+				8AD9BE8624402D4B003E18C6 /* Pacientes.swift */,
 				04E7B4D92444DD6200200569 /* PacientesDetails */,
 			);
 			path = Pacientes;
@@ -331,6 +408,9 @@
 				8AFA1C4224463545005E2707 /* ProfileCard.swift */,
 				8AFA1C4424463864005E2707 /* NotificationsCard.swift */,
 				8AFA1C46244647C5005E2707 /* PacientsPercent.swift */,
+				8AFA1C4824465670005E2707 /* LocalCard.swift */,
+				8A9195862447925E00DC3E59 /* TwitterCard.swift */,
+				8A91958824479ECE00DC3E59 /* CalendarCard.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -467,31 +547,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */,
+				8945ADE32447AAC900E3924B /* Acompanhamento.swift in Sources */,
 				8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */,
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
 				8AE30D262444D5B700E27253 /* TopBar.swift in Sources */,
+				8945ADE92447AB0B00E3924B /* Mensagens.swift in Sources */,
 				8960FBAC2447851F00772C6F /* DiagnosticPatient.swift in Sources */,
 				8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */,
 				8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */,
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
+				8A91958524478D9C00DC3E59 /* Tweet.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
+				8945ADEC2447AB3000E3924B /* Notas.swift in Sources */,
 				8AFA1C47244647C5005E2707 /* PacientsPercent.swift in Sources */,
 				045971AB243CF659007F3E29 /* AppDelegate.swift in Sources */,
 				0477C537243E6604000B05C9 /* Attendance.swift in Sources */,
+				8A91958924479ECE00DC3E59 /* CalendarCard.swift in Sources */,
 				8AFA1C4524463864005E2707 /* NotificationsCard.swift in Sources */,
 				0429C8712447774A006A995C /* PatientsListHeader.swift in Sources */,
 				0477C539243E6668000B05C9 /* PatientNameGeneration.swift in Sources */,
+				8AFA1C4924465670005E2707 /* LocalCard.swift in Sources */,
 				045971B0243CF659007F3E29 /* CoronaUI.xcdatamodeld in Sources */,
+				8945ADEF2447AB5400E3924B /* PessoasProximas.swift in Sources */,
 				8960FBAA244784FA00772C6F /* PersonalDataPatient.swift in Sources */,
-				89BEDCD22446293C00EC4C4A /* Dados&Sintomas.swift in Sources */,
+				8945ADE62447AAF300E3924B /* Dado_Sintomas.swift in Sources */,
+				89BEDCD22446293C00EC4C4A /* SecondCardTopBar.swift in Sources */,
 				89BEDCCF2446275600EC4C4A /* PacientesDetails.swift in Sources */,
 				0477C53B243E6697000B05C9 /* DistrictGeneration.swift in Sources */,
 				045971B2243CF659007F3E29 /* ContentView.swift in Sources */,
+				8A9195872447925E00DC3E59 /* TwitterCard.swift in Sources */,
 				04BF5647243D11670083867C /* MinisterioDaSaudeTwitter.swift in Sources */,
 				0429C8702447774A006A995C /* PatientList.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
 				8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */,
 				04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */,
+				8AB2D3CA24477AA70058945D /* View+Extension.swift in Sources */,
 				8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
 				8AFA1C4324463545005E2707 /* ProfileCard.swift in Sources */,

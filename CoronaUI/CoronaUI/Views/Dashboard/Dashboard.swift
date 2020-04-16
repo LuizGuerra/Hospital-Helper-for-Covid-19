@@ -19,12 +19,12 @@ struct Dashboard: View {
             }
             HStack {
                 PacientsPercent()
-                PacientsPercent()
+                LocalCard()
             }
             
             HStack {
-                PacientsPercent()
-                PacientsPercent()
+                CalendarCard()
+                TwitterCard()
             }
         }
         
@@ -34,5 +34,7 @@ struct Dashboard: View {
 struct Dashboard_Previews: PreviewProvider {
     static var previews: some View {
         Dashboard()
+            .previewLayout(.fixed(width: 1366, height: 1024))
+        
     }
 }
