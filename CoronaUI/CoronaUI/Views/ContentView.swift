@@ -108,7 +108,7 @@ struct ContentView: View {
     func getView(for tab: Tab) -> AnyView {
         switch tab {
         case .dashboard: return AnyView(Dashboard())
-        case .pacientes: return AnyView(Pacientes())
+        case .pacientes: return AnyView(PatientList(showPatientList: .confirmed, patientList: allPatients))
         case .agenda:return AnyView(Agenda())
         case .informacoes:return AnyView(Informacoes())
         }

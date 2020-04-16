@@ -23,13 +23,15 @@ struct PatientList: View {
             ApplicationColors.lightGray
             VStack {
                 PatientsListHeader()
-                ScrollView(.vertical) {
-                    ForEach(getPatientList(), id: \.id) { patient in
-                        PatientCell(patient: patient)
-                            .cornerRadius(10)
-                            .padding(.vertical, 10)
+                NavigationView() {
+                    ScrollView(.vertical) {
+                        ForEach(getPatientList(), id: \.id) { patient in
+                            PatientCell(patient: patient)
+                                .cornerRadius(10)
+                                .padding(.vertical, 10)
+                        }
                     }
-                }
+                }.navigationViewStyle(StackNavigationViewStyle())
             }
         }        
     }
