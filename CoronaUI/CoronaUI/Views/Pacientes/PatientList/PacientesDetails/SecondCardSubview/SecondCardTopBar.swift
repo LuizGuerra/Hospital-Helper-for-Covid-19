@@ -65,16 +65,11 @@ struct SubTabButton: View {
             
         }
     }
-    
-    func getOffSet() ->CGFloat {
-        return offset
-    }
 }
 
 struct CustomPageControll: View {
     @Binding var newOffSet: CGFloat
     var body: some View {
-//        VStack(alignment: .leading) {
             
         HStack {
             RoundedRectangle(cornerRadius: 10).fill().frame(width: 190, height: 4)
@@ -82,7 +77,6 @@ struct CustomPageControll: View {
                 .offset(x: newOffSet )
         }
         .padding(.leading, 0)
-//        }
     }
 
 }
@@ -93,18 +87,6 @@ struct SecondCardDetailTopBar: View {
     @State var currentTab: SubTab
     @State var selected: Bool = false
     
-    var offSetX: CGFloat {
-        switch currentTab {
-        case .dadosSintomas:
-            return offset
-        case .acompanhamento:
-            return offset
-        case .mensagens: return offset
-        case .pessoasProximas: return offset
-        case .notas:
-            return offset
-        }
-    }
     var body: some View {
         
             VStack {
@@ -133,9 +115,9 @@ struct SecondCardDetailTopBar: View {
                 .font(.system(size: 20))
                 .foregroundColor(Color(UIColor.black))
                 
+                CustomPageControll(newOffSet: $offset).animation(.default)
                
                 
-                CustomPageControll(newOffSet: $offset).animation(.default)
                 
                 VStack{
                     self.getView(for: self.currentTab)
