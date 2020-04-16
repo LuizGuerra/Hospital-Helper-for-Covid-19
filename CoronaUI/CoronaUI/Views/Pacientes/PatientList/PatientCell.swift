@@ -33,39 +33,41 @@ struct PatientCell: View {
     var body: some View {
         ZStack {
             Color.white
-            HStack {
-                VStack(alignment: .leading) {
-                    HStack {
-                        if selected {
-                            selectedBox()
-                        } else {
-                            unselectedBox()
+            NavigationLink(destination: PacientesDetails()) {
+                HStack {
+                    VStack(alignment: .leading) {
+                        HStack {
+                            if selected {
+                                selectedBox()
+                            } else {
+                                unselectedBox()
+                            }
+                            Text(getIdString())
+                            Text(patient.name)
+                                .fontWeight(.bold)
+                                .padding()
+                                .frame(alignment: .leading)
                         }
-                        Text(getIdString())
-                        Text(patient.name)
-                            .fontWeight(.bold)
-                            .padding()
-                            .frame(alignment: .leading)
                     }
-                }
-                
-                Spacer()
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("\(patient.age)")
-                            .frame(width: 30, alignment: .leading)
-                            .padding(.trailing, 90)
-                        Text(patient.district)
-                            .lineLimit(1)
-                            .frame(width: 200, alignment: .leading)
-                        Text(getTelephone())
-                            .foregroundColor(ApplicationColors.confirmationGreen)
-                            .frame(width: 160, alignment: .leading)
-                            .padding(.trailing, 44)
-                        Text(getStringDate())
-                            .frame(width: 120, alignment: .leading)
-                            .padding(.trailing, 44)
+                    
+                    Spacer()
+                    
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text("\(patient.age)")
+                                .frame(width: 30, alignment: .leading)
+                                .padding(.trailing, 90)
+                            Text(patient.district)
+                                .lineLimit(1)
+                                .frame(width: 200, alignment: .leading)
+                            Text(getTelephone())
+                                .foregroundColor(ApplicationColors.confirmationGreen)
+                                .frame(width: 160, alignment: .leading)
+                                .padding(.trailing, 44)
+                            Text(getStringDate())
+                                .frame(width: 120, alignment: .leading)
+                                .padding(.trailing, 44)
+                        }
                     }
                 }
             }
