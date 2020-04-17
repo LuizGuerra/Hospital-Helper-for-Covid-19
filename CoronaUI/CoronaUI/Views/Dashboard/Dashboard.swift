@@ -25,7 +25,7 @@ struct Dashboard: View {
                 CalendarCard()
                 TwitterCard()
             }
-        }.padding(.bottom, 92)
+        }.padding(.bottom, 200)
     }
 }
 

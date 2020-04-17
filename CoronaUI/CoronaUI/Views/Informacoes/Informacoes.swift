@@ -11,8 +11,8 @@ import SwiftUI
 struct Informacoes: View {
     var body: some View {
         HStack {
-            Color(.magenta)
-        }
+            Text("Comming soon! :) ")
+        }.frame(width: UIScreen.main.bounds.height , height: UIScreen.main.bounds.height * 0.986)
     }
 }
 
