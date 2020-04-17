@@ -11,8 +11,10 @@ import SwiftUI
 struct Agenda: View {
     var body: some View {
         HStack {
-            Color(.red)
-        }
+            VStack {
+                Text("Comming soon! :) ")
+                Text("").font(.title)            }
+        }.frame(width: UIScreen.main.bounds.height , height: UIScreen.main.bounds.height * 0.986)
     }
 }
 
