@@ -36,7 +36,6 @@ struct PatientList: View {
                                 .cornerRadius(10)
                                 .padding(.vertical, 10)
                         }
-                        
                     }
                 }.navigationViewStyle(StackNavigationViewStyle())
                 

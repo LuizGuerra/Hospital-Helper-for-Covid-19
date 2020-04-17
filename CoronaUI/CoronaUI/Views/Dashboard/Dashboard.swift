@@ -12,7 +12,6 @@ struct Dashboard: View {
     var body: some View {
         VStack(alignment: .leading) {
             
-            
             HStack {
                 ProfileCard().padding(.trailing, 100)
                 NotificationsCard()
@@ -26,8 +25,7 @@ struct Dashboard: View {
                 CalendarCard()
                 TwitterCard()
             }
-        }
-        
+        }.padding(.bottom, 92)
     }
 }
 
