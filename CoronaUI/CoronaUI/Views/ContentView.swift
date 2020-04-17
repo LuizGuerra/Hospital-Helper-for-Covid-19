@@ -93,8 +93,12 @@ struct ContentView: View {
                 .background(Color(red: 0.216, green: 0.231, blue: 0.325))
             
             VStack {
+//                NavigationView() {
+//                }.navigationViewStyle(StackNavigationViewStyle())
+
                 TopBar()
                 getView(for: currentTab)
+                
             }
             
             

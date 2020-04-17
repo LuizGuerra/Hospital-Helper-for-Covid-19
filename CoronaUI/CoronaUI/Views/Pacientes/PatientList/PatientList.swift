@@ -22,8 +22,7 @@ struct PatientList: View {
         ZStack {
             ApplicationColors.lightGray
             VStack {
-                PatientsListHeader()
-                NavigationView() {
+                PatientsListHeader()                
                     ScrollView(.vertical) {
                         ForEach(getPatientList(), id: \.id) { patient in
                             PatientCell(patient: patient)
@@ -31,7 +30,6 @@ struct PatientList: View {
                                 .padding(.vertical, 10)
                         }
                     }
-                }.navigationViewStyle(StackNavigationViewStyle())
             }
         }        
     }
