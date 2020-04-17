@@ -33,3 +33,9 @@ extension CGFloat {
 //    }
 }
 
+extension Double{
+    var cleanValue: String{
+        return String(format: 1 == floor(self) ? "%.0f" : "%.1f", self)
+    }
+}
+

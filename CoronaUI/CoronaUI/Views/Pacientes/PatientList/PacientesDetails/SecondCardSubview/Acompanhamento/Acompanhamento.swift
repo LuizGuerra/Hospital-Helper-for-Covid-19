@@ -29,7 +29,7 @@ struct Acompanhamento: View {
     
     /// test current date
     var calendario = Calendario()
-    
+    var febre = Double.random(in: 37..<40)
     var body: some View {
         
         HStack {
@@ -62,7 +62,7 @@ struct Acompanhamento: View {
                                             .frame(width: 24, height: 24)
                                         
                                         VStack{
-                                            Text("38,2")
+                                            Text("\(Double.random(in: 37..<40).cleanValue)")
                                             Text("º")
                                         }.font(.system(size: 20, weight: .bold, design: .default))
                                             .foregroundColor(Color(UIColor(red: 0.588, green: 0.612, blue: 0.729, alpha: 1)))

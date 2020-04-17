@@ -43,14 +43,14 @@ struct TabButton: View {
     let tab: Tab
     
     @Binding var currentTab: Tab
-    
+    @State var selected: Bool = false
     var body: some View {
         
         Button(action: {
             
             print("Did select \(self.tab.name) tab")
             self.currentTab = self.tab
-            
+            self.selected.toggle()
         }) {
             Image(self.tab.iconName).renderingMode(.original)
                 .frame(width: 50, height: 50)
