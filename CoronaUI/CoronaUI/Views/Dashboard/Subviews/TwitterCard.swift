@@ -18,13 +18,22 @@ struct TwitterCard: View {
                 ForEach (ministerioDaSaudeTweets, id: \.self) { tweet in
                     TweetContent(tweetBody: tweet.body)
                 }
+                 
+                
             }
         }
+            
         .frame(width: CGFloat.dashCardWidth(), height: CGFloat.dashCardHeight())
         .background(Color(UIColor.systemBackground))
         .cornerRadius(10)
         .shadow(color: Color.secondary, radius: 0.5, x: 0.5, y: 0.5)
+     
+        .onAppear{
+             UITableView.appearance().separatorStyle = .none
+        }
     }
+    
+    
 }
 
 struct Header: View {
@@ -34,11 +43,10 @@ struct Header: View {
             Image("twitter").renderingMode(.original)
                 .resizable().frame(width: 36, height: 36)
             
-            Text("Secretaria de Saúde").font(.system(size: 24, weight: .regular, design: .default))
+            Text("Secretaria de Saúde").font(.system(size: 20, weight: .regular, design: .default))
                 .lineLimit(1)
             
-            Text("@SES_RS").font(.system(size: 24, weight: .bold, design: .default))
-            .foregroundColor(Color(UIColor.systemBackground))
+            Text("@SES_RS").font(.system(size: 20, weight: .bold, design: .default))
         }
         .padding(.leading, 20)
         .padding(.top, 40)
@@ -54,6 +62,8 @@ struct TweetContent: View {
                 .padding([ .top, .bottom, .trailing])
                 .background(Color(UIColor.secondarySystemBackground))
                 .frame(width: CGFloat.dashCardWidth() - 20)
+                .cornerRadius(10)
+                .shadow(color: Color.secondary, radius: 0.5, x: 0.5, y: 0.5)
         }
         .cornerRadius(10)
     }
