@@ -79,7 +79,7 @@ struct PatientCell: View {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .none
         let formattedNumber = numberFormatter.string(from: NSNumber(value: patient.telephone.number))
-        print("heyo \(formattedNumber ?? "nope...")")
+//        print("heyo \(formattedNumber ?? "nope...")")
         return "(\(patient.telephone.ddd)) \(formattedNumber ?? "\(patient.telephone.number)")"
     }
     
