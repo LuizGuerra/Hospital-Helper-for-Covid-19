@@ -10,6 +10,24 @@ import SwiftUI
 
 struct PacientesDetails: View {
     @Binding var showHeader: Bool
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    var backBtn: some View {
+        Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Image("more")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .accentColor(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 1)))
+                Text("Lista de pacientes confirmados")
+                    .font(.system(size: 20))
+                    .accentColor(Color.black)
+            }
+        }
+    }
+    
     var body: some View {
         
         VStack(spacing: 30) {
@@ -30,6 +48,9 @@ struct PacientesDetails: View {
             .background(Color(UIColor.systemBackground))
             .cornerRadius(10)
             .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
+            .navigationBarBackButtonHidden(false)
+//            .navigationBarItems(leading: Text("Lista de Pacientes"))
+            .navigationBarItems(leading: backBtn)
             
             SecondCardDetailTopBar(currentTab: .acompanhamento)
         }
