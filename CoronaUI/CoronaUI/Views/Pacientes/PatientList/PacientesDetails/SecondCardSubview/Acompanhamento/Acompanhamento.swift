@@ -8,10 +8,27 @@
 
 import SwiftUI
 
+struct Calendario {
+    let date = Date()
+    let dateFormatter = DateFormatter()
+    let today : Int
+    
+    init() {
+        dateFormatter.dateFormat = "dd"
+        today = Int(dateFormatter.string(from: date)) ?? 0
+    }
+}
+
 struct Acompanhamento: View {
-    var daysMonth = [01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+    //    var daysMonth = [01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+    
+    // da pra fazer assim tb, ronald :)
+    var daysMonth = 1...31
     
     var daysWeek = ["Dom","Seg","Ter","Qua","Qui","Sex","Sab"]
+    
+    /// test current date
+    var calendario = Calendario()
     
     var body: some View {
         
@@ -49,7 +66,7 @@ struct Acompanhamento: View {
                                     
                                 }.padding(.bottom, 15)
                                 
-                    
+                                
                                 VStack(alignment: .leading, spacing: 5){
                                     Text("SINTOMAS")
                                         .font(.system(size: 12, weight: .medium, design: .default))

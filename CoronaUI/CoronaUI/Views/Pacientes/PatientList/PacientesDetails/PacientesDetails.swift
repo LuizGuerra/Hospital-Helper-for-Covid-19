@@ -42,7 +42,6 @@ struct PacientesDetails: View {
 
 struct PacientesDetails_Previews: PreviewProvider {
     static var previews: some View {
-        PacientesDetails()
-            .previewLayout(.fixed(width: 1366, height: 1024))
+        PacientesDetails()            .previewLayout(.fixed(width: 1366, height: 1024))
     }
 }
