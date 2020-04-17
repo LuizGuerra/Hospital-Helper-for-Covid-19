@@ -20,15 +20,13 @@ struct CalendarHead: View {
                     .cornerRadius(10, corners: [.topRight, .topLeft])
                 
                 
-                
                 VStack {
                     Text("01")
                         .font(.system(size: 36, weight: .bold, design: .default))
                     
                     Text("Qua")
                 }.padding(.vertical, 6)
-                
-            }
+            }   
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(UIColor(red: 0.588, green: 0.612, blue: 0.729, alpha: 1)), lineWidth:2))
             
             

@@ -106,7 +106,7 @@ struct SecondCardDetailTopBar: View {
                 SubTabButton(tab: .pessoasProximas, currentTab: self.$currentTab,  offset: $offset)
                 
             }
-            .frame(width: 1156,height: 96)
+            .frame(width: 1156,height: 76)
             .background(Color(UIColor.systemBackground))
             .cornerRadius(10)
             .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)

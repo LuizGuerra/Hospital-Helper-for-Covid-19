@@ -28,11 +28,13 @@ struct PatientList: View {
                 } else {
                     PatientsListHeader().animation(.linear)
                 }
+                
                 ScrollView(.vertical) {
                     ForEach(getPatientList(), id: \.id) { patient in
                         PatientCell(patient: patient, showHeader: self.$showHeader)
                             .cornerRadius(10)
                             .padding(.vertical, 10)
+                            .accentColor(Color.black)
                     }
                 }
             }

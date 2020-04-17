@@ -41,14 +41,16 @@ struct Acompanhamento: View {
                         VStack{
                             
                             // Days Stack
-                            VStack {
-                                Text("\(day)")
-                                    .font(.system(size: 36, weight: .bold, design: .default))
-                                
-                                Text("Ter")
-                            }.padding(.vertical, 6)
-                                .foregroundColor(Color(UIColor(red: 0.658, green: 0.658, blue: 0.658, alpha: 1)))
-                                .frame(width: 163, height: 91)
+                            HStack {
+                                VStack {
+                                    Text("\(day)")
+                                        .font(.system(size: 36, weight: .bold, design: .default))
+                                    
+                                    Text("Ter")
+                                }.padding(.vertical, 6)
+                                    .foregroundColor(Color(UIColor(red: 0.658, green: 0.658, blue: 0.658, alpha: 1)))
+                                    .frame(width: 163, height: 91)
+                            }
                             
                             
                             // Symptoms Stack
@@ -88,6 +90,7 @@ struct Acompanhamento: View {
                                 .cornerRadius(10)
                                 
                                 
+                                
                                 Spacer()
                                     .frame(width: 1, height: 248)
                                     .background(Color(UIColor.lightGray))
@@ -106,12 +109,10 @@ struct Acompanhamento: View {
                 }
             }
         }
-        .frame(width: 1156,height: 344)
+        .frame(width: 1156,height: 390)
         .background(Color(UIColor.systemBackground))
         .cornerRadius(10)
         .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
-        .font(.system(size: 20))
-        .foregroundColor(Color(UIColor.black))
     }
 }
 
