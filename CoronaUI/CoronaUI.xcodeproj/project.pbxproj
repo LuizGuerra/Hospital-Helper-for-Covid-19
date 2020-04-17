@@ -37,6 +37,10 @@
 		04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5F427243E5BA700FD32B1 /* Patients.swift */; };
 		04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DA2444DD8D00200569 /* PatientCell.swift */; };
 		04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7B4DD2444E60C00200569 /* ApplicationColors.swift */; };
+		893084442449093C006EE64E /* CalendarHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893084432449093C006EE64E /* CalendarHead.swift */; };
+		8930844624490944006EE64E /* CalendarBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930844524490944006EE64E /* CalendarBody.swift */; };
+		8930844A24490B39006EE64E /* CalendarMockBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930844924490B39006EE64E /* CalendarMockBody.swift */; };
+		8930844C24490CAB006EE64E /* CalendarMockHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930844B24490CAB006EE64E /* CalendarMockHead.swift */; };
 		8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EA24402DBF0056E1AE /* Agenda.swift */; };
 		8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC8EC24402DF00056E1AE /* Informacoes.swift */; };
 		8A91958524478D9C00DC3E59 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A91958424478D9C00DC3E59 /* Tweet.swift */; };
@@ -107,6 +111,10 @@
 		04E5F427243E5BA700FD32B1 /* Patients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
 		04E7B4DA2444DD8D00200569 /* PatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCell.swift; sourceTree = "<group>"; };
 		04E7B4DD2444E60C00200569 /* ApplicationColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationColors.swift; sourceTree = "<group>"; };
+		893084432449093C006EE64E /* CalendarHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHead.swift; sourceTree = "<group>"; };
+		8930844524490944006EE64E /* CalendarBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarBody.swift; sourceTree = "<group>"; };
+		8930844924490B39006EE64E /* CalendarMockBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMockBody.swift; sourceTree = "<group>"; };
+		8930844B24490CAB006EE64E /* CalendarMockHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMockHead.swift; sourceTree = "<group>"; };
 		8A2EC8EA24402DBF0056E1AE /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		8A2EC8EC24402DF00056E1AE /* Informacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacoes.swift; sourceTree = "<group>"; };
 		8A91958424478D9C00DC3E59 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
@@ -182,10 +190,10 @@
 		0440FA1A2448EA6F00900E9B /* SecondCardSubview */ = {
 			isa = PBXGroup;
 			children = (
-				0440FA1B2448EA6F00900E9B /* Acompanhamento */,
-				0440FA1D2448EA6F00900E9B /* Mensagens */,
-				0440FA1F2448EA6F00900E9B /* Dados e Sintomas */,
 				0440FA212448EA6F00900E9B /* SecondCardTopBar.swift */,
+				0440FA1F2448EA6F00900E9B /* Dados e Sintomas */,
+				0440FA1D2448EA6F00900E9B /* Mensagens */,
+				0440FA1B2448EA6F00900E9B /* Acompanhamento */,
 				0440FA222448EA6F00900E9B /* Notas */,
 				0440FA242448EA6F00900E9B /* Pessoas Proximas */,
 			);
@@ -196,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				0440FA1C2448EA6F00900E9B /* Acompanhamento.swift */,
+				893084472449094B006EE64E /* CalendarHead */,
+				8930844824490955006EE64E /* CalendarBody */,
 			);
 			path = Acompanhamento;
 			sourceTree = "<group>";
@@ -332,6 +342,24 @@
 				8AB2D3C924477AA70058945D /* View+Extension.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		893084472449094B006EE64E /* CalendarHead */ = {
+			isa = PBXGroup;
+			children = (
+				893084432449093C006EE64E /* CalendarHead.swift */,
+				8930844B24490CAB006EE64E /* CalendarMockHead.swift */,
+			);
+			path = CalendarHead;
+			sourceTree = "<group>";
+		};
+		8930844824490955006EE64E /* CalendarBody */ = {
+			isa = PBXGroup;
+			children = (
+				8930844524490944006EE64E /* CalendarBody.swift */,
+				8930844924490B39006EE64E /* CalendarMockBody.swift */,
+			);
+			path = CalendarBody;
 			sourceTree = "<group>";
 		};
 		899D81D9243FEB0B002603E7 /* Support */ = {
@@ -548,11 +576,13 @@
 				04E7B4DE2444E60C00200569 /* ApplicationColors.swift in Sources */,
 				8AE30D292444DD3500E27253 /* Notificacoes.swift in Sources */,
 				0440FA2B2448EA6F00900E9B /* Dado_Sintomas.swift in Sources */,
+				8930844C24490CAB006EE64E /* CalendarMockHead.swift in Sources */,
 				04BF564A243D13AA0083867C /* PortoAlegreStatus.swift in Sources */,
 				8AE30D262444D5B700E27253 /* TopBar.swift in Sources */,
 				8AD9BE8524402912003E18C6 /* Dashboard.swift in Sources */,
 				8A2EC8ED24402DF00056E1AE /* Informacoes.swift in Sources */,
 				0477C533243E652D000B05C9 /* Messages.swift in Sources */,
+				893084442449093C006EE64E /* CalendarHead.swift in Sources */,
 				8A91958524478D9C00DC3E59 /* Tweet.swift in Sources */,
 				0440FA2C2448EA6F00900E9B /* SecondCardTopBar.swift in Sources */,
 				04E5F428243E5BA700FD32B1 /* Patients.swift in Sources */,
@@ -577,8 +607,10 @@
 				0440FA262448EA6F00900E9B /* PersonalDataPatient.swift in Sources */,
 				04BF564C243D163A0083867C /* HomeTests.swift in Sources */,
 				8A2EC8EB24402DBF0056E1AE /* Agenda.swift in Sources */,
+				8930844624490944006EE64E /* CalendarBody.swift in Sources */,
 				04E7B4DB2444DD8D00200569 /* PatientCell.swift in Sources */,
 				0440FA2D2448EA6F00900E9B /* Notas.swift in Sources */,
+				8930844A24490B39006EE64E /* CalendarMockBody.swift in Sources */,
 				8AB2D3CA24477AA70058945D /* View+Extension.swift in Sources */,
 				8AE30D212444D1D500E27253 /* SearchBar.swift in Sources */,
 				045971AD243CF659007F3E29 /* SceneDelegate.swift in Sources */,
