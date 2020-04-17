@@ -35,8 +35,6 @@ enum SubTab: String, CaseIterable {
             return "Pessoas próximas"
         }
     }
-    
-    
 }
 
 
@@ -46,7 +44,6 @@ struct SubTabButton: View {
     @Binding var currentTab: SubTab
     @Binding var offset: CGFloat
     var body: some View {
-        
         
         GeometryReader { view in
             VStack {
@@ -61,7 +58,6 @@ struct SubTabButton: View {
                         .padding()
                 }
             }
-            
         }
     }
 }
@@ -77,7 +73,6 @@ struct CustomPageControll: View {
         }
         .padding(.leading, 0)
     }
-    
 }
 
 struct SecondCardDetailTopBar: View {

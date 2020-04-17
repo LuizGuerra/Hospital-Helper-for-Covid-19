@@ -14,8 +14,6 @@ struct PacientesDetails: View {
         
         VStack(spacing: 30) {
             HStack {
-                
-                
                 // Personal data of the patient
                 PersonalDataPatient()
                 
@@ -23,7 +21,6 @@ struct PacientesDetails: View {
                     .frame(width: 1, height: 271)
                     .background(Color(UIColor.lightGray))
                     .padding(.all, 40)
-                
                 
                 // Diagnostic of the symptoms
                 DiagnosticPatient()
