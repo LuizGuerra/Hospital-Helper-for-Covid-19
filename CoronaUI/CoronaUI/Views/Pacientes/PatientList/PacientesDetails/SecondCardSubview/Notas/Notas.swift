@@ -14,7 +14,6 @@ struct Notas: View {
             HStack {
                 VStack {
                     Text("Comming soon! :) ")
-                    Text("").font(.title)            }
             }.frame(width: UIScreen.main.bounds.height , height: UIScreen.main.bounds.height * 0.38)
         }
         

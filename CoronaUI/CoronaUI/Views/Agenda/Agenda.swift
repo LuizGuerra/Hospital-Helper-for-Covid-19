@@ -13,7 +13,7 @@ struct Agenda: View {
         HStack {
             VStack {
                 Text("Comming soon! :) ").font(.system(size: 48, weight: .bold, design: .default))
-                Text("").font(.title)
+                
                 
             }
         }.frame(width: UIScreen.main.bounds.height , height: UIScreen.main.bounds.height * 0.986)
