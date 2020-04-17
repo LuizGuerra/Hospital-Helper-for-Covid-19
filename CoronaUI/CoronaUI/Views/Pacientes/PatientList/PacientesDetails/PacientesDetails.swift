@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct PacientesDetails: View {
-    
+    @Binding var showHeader: Bool
     var body: some View {
         
-        VStack(spacing: 20) {
+        VStack(spacing: 30) {
             HStack {
                 
                 
@@ -36,13 +36,12 @@ struct PacientesDetails: View {
             
             SecondCardDetailTopBar(currentTab: .acompanhamento)
         }
-    }
-}
-
-
-struct PacientesDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        PacientesDetails()
-            .previewLayout(.fixed(width: 1366, height: 1024))
+        .onAppear {
+                print("mostrou detalhe")
+                self.showHeader.toggle()
+        }
+        .onDisappear{
+            self.showHeader.toggle()
+        }
     }
 }

@@ -12,6 +12,7 @@ struct PatientCell: View {
     
     let patient: Patient
     @State var selected = false
+    @Binding var showHeader: Bool
     
     fileprivate func unselectedBox() -> some View {
         return Rectangle()
@@ -33,7 +34,7 @@ struct PatientCell: View {
     var body: some View {
         ZStack {
             Color.white
-            NavigationLink(destination: PacientesDetails()) {
+            NavigationLink(destination: PacientesDetails(showHeader: $showHeader)) {
                 HStack {
                     VStack(alignment: .leading) {
                         HStack {
@@ -72,14 +73,14 @@ struct PatientCell: View {
                 }
             }
         }.frame(height: 75).font(.system(size: 20))
-        
+          
     }
     
     func getTelephone() -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .none
         let formattedNumber = numberFormatter.string(from: NSNumber(value: patient.telephone.number))
-        print("heyo \(formattedNumber ?? "nope...")")
+//        print("heyo \(formattedNumber ?? "nope...")")
         return "(\(patient.telephone.ddd)) \(formattedNumber ?? "\(patient.telephone.number)")"
     }
     
@@ -102,9 +103,10 @@ struct PatientCell: View {
     
 }
 
-struct PacientCell_Previews: PreviewProvider {
-    static var previews: some View {
-        PatientCell(patient: allPatients[0])
-            .previewLayout(.fixed(width: 1147, height: 75))
-    }
-}
+//struct PacientCell_Previews: PreviewProvider {
+//    static var previews: some View {
+////        @State var showHeader: Bool = true
+////        PatientCell(patient: allPatients[0], showHeader: showHeader)
+////            .previewLayout(.fixed(width: 1147, height: 75))
+//    }
+//}

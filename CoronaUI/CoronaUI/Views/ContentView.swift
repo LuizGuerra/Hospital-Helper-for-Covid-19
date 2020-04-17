@@ -52,7 +52,7 @@ struct TabButton: View {
             self.currentTab = self.tab
             
         }) {
-            Image(self.tab.iconName)
+            Image(self.tab.iconName).renderingMode(.original)
                 .frame(width: 50, height: 50)
         }.padding(16)
         
