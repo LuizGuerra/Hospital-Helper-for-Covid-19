@@ -54,11 +54,10 @@ struct SubTabButton: View {
                 Button(action: {
                     print("Selected the \(self.tab.nameOfTab) one")
                     self.currentTab = self.tab
-                    self.offset =   (view.frame(in: .global).midX - UIScreen.main.bounds.midX) - 60
+                    self.offset = (view.frame(in: .global).midX - UIScreen.main.bounds.midX) - 60
                     print("off set \(self.offset)")
                 }) {
                     Text("\(self.tab.nameOfTab)")
-                        .fontWeight(.bold)
                         .padding()
                 }
             }
@@ -70,7 +69,7 @@ struct SubTabButton: View {
 struct CustomPageControll: View {
     @Binding var newOffSet: CGFloat
     var body: some View {
-            
+        
         HStack {
             RoundedRectangle(cornerRadius: 10).fill().frame(width: 190, height: 4)
                 .foregroundColor(Color(UIColor(red: 0.468, green: 0.459, blue: 0.875, alpha: 1)))
@@ -78,7 +77,7 @@ struct CustomPageControll: View {
         }
         .padding(.leading, 0)
     }
-
+    
 }
 
 struct SecondCardDetailTopBar: View {
@@ -89,44 +88,43 @@ struct SecondCardDetailTopBar: View {
     
     var body: some View {
         
-            VStack {
-                HStack {
-                    SubTabButton(tab: .dadosSintomas, currentTab: self.$currentTab, offset: $offset)
-                    
-                    Spacer()
-                    
-                    SubTabButton(tab: .mensagens, currentTab: self.$currentTab, offset: $offset)
-                    Spacer()
-                    
-                    SubTabButton(tab: .acompanhamento, currentTab: self.$currentTab, offset: $offset)
-                    Spacer()
-                    
-                    SubTabButton(tab: .notas, currentTab: self.$currentTab,  offset: $offset)
-                    Spacer()
-                    
-                    SubTabButton(tab: .pessoasProximas, currentTab: self.$currentTab,  offset: $offset)
-                    
-                }
-                    
-                .frame(width: 1156,height: 96)
-                .background(Color(UIColor.systemBackground))
-                .cornerRadius(10)
-                .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
-                .font(.system(size: 20))
-                .foregroundColor(Color(UIColor.black))
+        VStack {
+            HStack {
+                SubTabButton(tab: .dadosSintomas, currentTab: self.$currentTab, offset: $offset)
                 
-                CustomPageControll(newOffSet: $offset).animation(.default)
-               
+                Spacer()
                 
+                SubTabButton(tab: .mensagens, currentTab: self.$currentTab, offset: $offset)
+                Spacer()
                 
-                VStack{
-                    self.getView(for: self.currentTab)
-                }
+                SubTabButton(tab: .acompanhamento, currentTab: self.$currentTab, offset: $offset)
+                Spacer()
+                
+                SubTabButton(tab: .notas, currentTab: self.$currentTab,  offset: $offset)
+                Spacer()
+                
+                SubTabButton(tab: .pessoasProximas, currentTab: self.$currentTab,  offset: $offset)
+                
             }
+            .frame(width: 1156,height: 96)
+            .background(Color(UIColor.systemBackground))
+            .cornerRadius(10)
+            .shadow(color: Color.secondary, radius: 0.5, x: 0, y: 0.5)
+            .font(.system(size: 20))
+            .foregroundColor(Color(UIColor.black))
+            
+            CustomPageControll(newOffSet: $offset).animation(.default)
+            
+            
+            
+            VStack{
+                self.getView(for: self.currentTab)
+            }
+        }
         
     }
     
-   
+    
     
     
     func getView(for tab: SubTab) -> AnyView {
