@@ -15,6 +15,7 @@ enum ShowPatientList {
 struct PatientList: View {
     
     @State var showPatientList: ShowPatientList
+    @State var showHeader: Bool = false
     
     let patientList: [Patient]
     
@@ -22,19 +23,28 @@ struct PatientList: View {
         ZStack {
             ApplicationColors.lightGray
             VStack {
-                PatientsListHeader()
+                if self.showHeader {
+                    PatientsListHeader().hidden().animation(.default)
+                } else {
+                    PatientsListHeader().animation(.linear)
+                }
+                
                 NavigationView() {
                     ScrollView(.vertical) {
                         ForEach(getPatientList(), id: \.id) { patient in
-                            PatientCell(patient: patient)
+                            PatientCell(patient: patient, showHeader: self.$showHeader)
                                 .cornerRadius(10)
                                 .padding(.vertical, 10)
                         }
+                        
                     }
                 }.navigationViewStyle(StackNavigationViewStyle())
+                
             }
-        }        
+        }
+        
     }
+
     
     func getPatientList () -> [Patient] {
         switch showPatientList {
