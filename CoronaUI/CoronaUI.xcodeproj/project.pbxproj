@@ -171,8 +171,8 @@
 		0440FA152448EA6F00900E9B /* PacientesDetails */ = {
 			isa = PBXGroup;
 			children = (
-				0440FA162448EA6F00900E9B /* FirstCardSubview */,
 				0440FA192448EA6F00900E9B /* PacientesDetails.swift */,
+				0440FA162448EA6F00900E9B /* FirstCardSubview */,
 				0440FA1A2448EA6F00900E9B /* SecondCardSubview */,
 			);
 			path = PacientesDetails;
